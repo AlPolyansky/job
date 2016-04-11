@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "FiraSansLight";
+  src: url("../fonts/FiraSans/FiraSansLight/FiraSansLight.eot");
+  src: url("../fonts/FiraSans/FiraSansLight/FiraSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSans/FiraSansLight/FiraSansLight.woff") format("woff"), url("../fonts/FiraSans/FiraSansLight/FiraSansLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "FiraSansRegular";
+  src: url("../fonts/FiraSans/FiraSansRegular/FiraSansRegular.eot");
+  src: url("../fonts/FiraSans/FiraSansRegular/FiraSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSans/FiraSansRegular/FiraSansRegular.woff") format("woff"), url("../fonts/FiraSans/FiraSansRegular/FiraSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+header {
+  background-image: url("../img/header-bg-2.png");
+  height: 720px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  width: 100%; }
+  header .top-menu-wrap {
+    background-color: #74a52e;
+    height: 70px; }
+  header .top-menu {
+    height: 70px;
+    display: table; }
+    @media only screen and (max-width: 991px) {
+      header .top-menu {
+        display: none; } }
+    header .top-menu > ul {
+      width: 100%;
+      display: table-row;
+      height: 70px;
+      vertical-align: middle; }
+      header .top-menu > ul > li {
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        text-align: center; }
+        header .top-menu > ul > li > a {
+          color: #fff;
+          text-transform: uppercase;
+          font-family: "FiraSansLight";
+          text-decoration: none;
+          font-size: 13px;
+          display: table-cell;
+          vertical-align: middle;
+          height: 100%; }
+          header .top-menu > ul > li > a > span {
+            display: block;
+            padding: 16px 0; }
+          header .top-menu > ul > li > a:hover {
+            background-color: #fff;
+            color: #000; }
+    header .top-menu .top-menu_lvl-2 {
+      position: absolute;
+      display: none;
+      overflow: hidden; }
+      header .top-menu .top-menu_lvl-2 > li {
+        display: block;
+        width: 300px;
+        background-color: #fff;
+        display: block;
+        text-align: left; }
+        header .top-menu .top-menu_lvl-2 > li:first-child {
+          padding-top: 11px; }
+        header .top-menu .top-menu_lvl-2 > li > a {
+          color: #000;
+          text-decoration: none;
+          font-family: "$fontMainRegular";
+          font-size: 13px;
+          display: block;
+          padding: 8px 0;
+          padding-left: 26px; }
+          header .top-menu .top-menu_lvl-2 > li > a:hover {
+            background-color: #74a52e;
+            color: #fff; }
+
+.top-menu_lvl-1:hover .top-menu_lvl-2 {
+  display: block;
+  z-index: 200; }
+
+.top-menu_lvl-1:hover {
+  background-color: #fff;
+  color: #111; }
+
+@media only screen and (max-width: 991px) {
+  .header-info .logo-wrap {
+    min-width: 190px; } }
+
+.header-info_logo {
+  height: 65px;
+  margin-left: 20px;
+  margin-top: 13px; }
+  @media only screen and (max-width: 991px) {
+    .header-info_logo {
+      height: 56px;
+      margin-top: 5px; } }
+
+.header-info_title {
+  margin-top: 13px;
+  color: #fff;
+  text-align: center;
+  font-family: "FiraSansLight";
+  line-height: 20px; }
+  .header-info_title strong {
+    font-weight: 100;
+    font-style: normal; }
+  .header-info_title address {
+    margin: 0 auto;
+    width: 60%; }
+  .header-info_title a {
+    color: #74a52e;
+    display: inline-block;
+    text-decoration: underline; }
+
+.header-info_phone {
+  margin-top: 13px;
+  float: right; }
+  @media only screen and (max-width: 991px) {
+    .header-info_phone {
+      margin-top: 5px; }
+      .header-info_phone address {
+        border-bottom: 1px solid #fff;
+        padding: 0;
+        font-size: 24px;
+        white-space: nowrap; } }
+    @media only screen and (max-width: 991px) and (max-width: 479px) {
+      .header-info_phone address {
+        font-size: 18px !important; } }
+  @media only screen and (max-width: 991px) {
+      .header-info_phone p {
+        text-align: right;
+        font-size: 16px; }
+        .header-info_phone p a {
+          display: none; } }
+  .header-info_phone > address {
+    text-align: right;
+    font-size: 30px;
+    color: #fff; }
+  .header-info_phone > p {
+    text-align: right;
+    color: #fff; }
+  .header-info_phone a {
+    text-align: right;
+    display: inline-block;
+    margin-left: 20px;
+    color: #74a52e;
+    text-decoration: underline; }
+
+.header-info .mobile-button {
+  height: 20px;
+  width: 20px;
+  background-color: red; }

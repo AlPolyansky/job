@@ -1,0 +1,134 @@
+header
+	background-image: url("../img/header-bg-2.png")
+	height: $heightHeader
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center top
+	width: 100%
+	.top-menu-wrap
+		background-color: $colorTopMenu
+		height: $heightTopMenu
+	.top-menu
+		height: $heightTopMenu
+		display: table
+		@media only screen and(max-width : 991px)
+			display: none
+		&>ul
+			width: 100%
+			display: table-row
+			height: $heightTopMenu
+			vertical-align: middle
+			&>li
+				display: table-cell
+				vertical-align: middle
+				height: 100%
+				text-align: center
+				&>a
+					color: $colorBase
+					text-transform: uppercase
+					font-family: $fontMainLight
+					text-decoration: none
+					font-size: 13px
+					display: table-cell
+					vertical-align: middle
+					height: 100%
+					&>span
+						display: block
+						padding: 16px 0
+					&:hover
+						background-color: $colorBase
+						color: $colorBase2
+		.top-menu_lvl-2
+			position: absolute
+			display: none
+			overflow: hidden
+			&>li
+				display: block
+				width: 300px
+				background-color: $colorBase
+				display: block
+				text-align: left
+				&:first-child
+					padding-top: 11px
+				&>a
+					color: $colorBase2
+					text-decoration: none
+					font-family: "$fontMainRegular"
+					font-size: 13px
+					display: block
+					padding: 8px 0
+					padding-left: 26px
+					&:hover
+						background-color: $colorTopMenu
+						color: $colorBase
+.top-menu_lvl-1:hover .top-menu_lvl-2
+	display: block
+	z-index: 200
+.top-menu_lvl-1:hover
+	background-color: $colorBase
+	color: #111
+.header-info
+	@media only screen and(max-width : 991px)
+		.logo-wrap
+			min-width: 190px
+	&_logo
+		height: 65px
+		margin-left: 20px
+		margin-top: 13px
+		@media only screen and(max-width : 991px)
+			height: 56px
+			margin-top: 5px
+	&_title
+		margin-top: 13px
+		color: $colorBase
+		text-align: center
+		font-family: $fontMainLight
+		line-height: 20px
+		strong
+			font-weight: 100
+			font-style: normal
+		address
+			margin: 0 auto
+			width: 60%
+		a
+			color: $colorTopMenu
+			display: inline-block
+			text-decoration: underline
+	&_phone
+		margin-top: 13px
+		float: right
+		@media only screen and(max-width : 991px)
+			margin-top: 5px
+			address
+				border-bottom: 1px solid $colorBase
+				padding: 0
+				font-size: 24px
+				white-space: nowrap
+				@media only screen and(max-width : 479px)
+					font-size: 18px!important
+			p
+				text-align: right
+				font-size: 16px
+				a
+					display: none
+		&>address
+			text-align: right
+			font-size: 30px
+			color: $colorBase
+		&>p
+			text-align: right
+			color: $colorBase
+		a
+			text-align: right
+			display: inline-block
+			margin-left: 20px
+			color: $colorTopMenu
+			text-decoration: underline
+	.mobile-button
+		height: 20px
+		width: 20px
+		background-color: red
+
+
+
+
