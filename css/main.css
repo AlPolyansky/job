@@ -1,0 +1,344 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:&subset=latin,cyrillic-ext,cyrillic);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 100;
+  height: 850px;
+  background-image: url("../img/header-bg-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+  position: relative;
+}
+
+.header__info .leather-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.header__info .leather {
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.header__info .contacts {
+  margin-top: 13px;
+}
+
+.header__info .contacts_logo-img {
+  width: 128px;
+  position: relative;
+  top: -26px;
+}
+
+.header__info .contacts_addr {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+.header__info .contacts_addr a {
+  text-decoration: underline;
+  color: #74a52e;
+}
+
+.header__info .contacts_addr_city {
+  display: block;
+}
+
+.header__info .contacts_phone {
+  color: #fff;
+  line-height: 35px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.header__info .contacts_phone address {
+  font-size: 30px;
+}
+
+.header__info .contacts_phone span a {
+  text-decoration: underline;
+  color: #74a52e;
+}
+
+.header__info .action {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  font-style: bold;
+  margin-top: 70px;
+}
+
+.header__info .action .tape {
+  height: 100px;
+  width: 720px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-image: url("../img/line.png");
+}
+
+.header__info .action .tape strong {
+  font-size: 20px;
+  position: relative;
+  top: 15px;
+  text-transform: uppercase;
+  color: #000;
+  left: 6px;
+}
+
+.header__info .action .tape strong:before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: -30px;
+  bottom: 0;
+  background-image: url("../img/watch.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__info .action__form_title {
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  top: 50px;
+}
+
+.header__info .action__form_title:after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: 0;
+  background-image: url("../img/arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 100px;
+}
+
+.header__info .action__form .icons-arrow {
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: 0;
+  background-image: url("../img/arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 100px;
+}
+
+.header__info .action__form .icons-arrow strong {
+  color: #dbb313;
+}
+
+.header__info .action__form .icons-arrow span {
+  display: block;
+}
+
+.header__info .action__form_form-elem input {
+  display: inline-block;
+  background-color: #fff;
+  position: relative;
+  width: 300px;
+  margin-top: 150px;
+  height: 40px;
+  font-size: 10px;
+  color: #333;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: bottom;
+  border: none;
+  font-size: 18px;
+  color: rgba(54, 61, 75, 0.8);
+  text-transform: uppercase;
+}
+
+.header__info .action__form_form-elem input::-webkit-input-placeholder {
+  color: rgba(54, 61, 75, 0.8);
+}
+
+.header__info .action__form_form-elem input:focus {
+  border: none;
+  outline: none;
+}
+
+.header__info .action__form_form-elem button {
+  width: 300px;
+  margin-top: 147px;
+  background-color: #74a52e;
+  border: none;
+  border-radius: 5px;
+  vertical-align: top;
+  color: #fff;
+  font-size: 18px;
+  height: 47px;
+  -webkit-box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.37);
+}
+
+.top-menu {
+  height: 70px;
+  width: 100%;
+  background-color: #74a52e;
+  position: relative;
+  z-index: 100;
+  font-family: Arial;
+}
+
+.top-menu_lvl-one {
+  display: table;
+  width: 100%;
+  height: 70px;
+}
+
+@media only screen and (max-width: 992px) {
+  .top-menu_lvl-one {
+    display: none;
+  }
+}
+
+.top-menu_lvl-one > li {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.top-menu_lvl-one > li > a {
+  color: #fff;
+  font-weight: 100;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.top-menu_lvl-one > li > a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.top-menu_lvl-one > li > a > span {
+  top: 20px;
+  position: relative;
+}
+
+.top-menu_open-lvl-two {
+  position: relative;
+}
+
+.top-menu_open-lvl-two .top-menu_lvl-two {
+  position: absolute;
+  background-color: #fff;
+  z-index: 200;
+  display: block;
+  width: 300px;
+  display: none;
+  font-size: 13px;
+}
+
+.top-menu_open-lvl-two .top-menu_lvl-two li {
+  margin-top: 5px;
+}
+
+.top-menu_open-lvl-two .top-menu_lvl-two li a {
+  display: block;
+  text-align: left;
+  padding-left: 26px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.top-menu_open-lvl-two .top-menu_lvl-two li a:hover {
+  background-color: #74a52e;
+  color: #fff;
+}
+
+.top-menu .contacts {
+  text-align: center;
+}
+
+.top-menu .contacts .contacts_logo-img {
+  float: left;
+  margin-top: 14px;
+  margin-left: 20px;
+  height: 58px;
+}
+
+.top-menu_open-lvl-two:hover .top-menu_lvl-two {
+  display: block;
+}
