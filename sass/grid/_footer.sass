@@ -1,0 +1,53 @@
+#footer
+	.footer
+		padding: 40px 0
+		padding-bottom: 20px
+		background-image: url("../img/footer-bg.jpg")
+		background-position: center bottom
+		background-size: cover
+		&_help
+			margin-bottom: 30px
+			&_title
+				text-transform: uppercase
+			p
+				text-align: center
+				color: $colorBase
+				strong
+					text-align: center
+			a
+				color: $colorTopMenu
+				text-decoration: underline
+		span
+			@media only screen and (max-width : 991px)
+				display: inline-block
+			text-align: center
+			display: block
+			color: $colorBase
+			margin: 0 auto
+		&_logo
+		&_phone
+			color: $colorBase
+			&_phone-wrap
+				white-space: nowrap
+				color: $colorBase
+			address
+				float: right
+				white-space: nowrap
+				font-size: 30px
+				margin-bottom: 12px
+				@media only screen and (max-width : 601px)
+					text-decoration: underline
+			p
+				float: right
+				white-space: nowrap
+				a
+					margin-left: 8px
+					color: $colorTopMenu
+					text-decoration: underline
+		&_copy
+			text-align: center
+			background-color: $colorFooter
+			color: $colorBase
+			min-height: 40px
+			p
+				padding: 10px 0

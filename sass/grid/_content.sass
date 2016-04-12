@@ -1,0 +1,185 @@
+#content
+	.conten-title
+		text-transform: uppercase
+		h2
+			font-size: 46px
+		strong
+			font-weight: 900
+			&:after
+				content: ""
+				display: block
+				height: 7px
+				width: 71px
+				margin-top: 10px
+				background-color: $colorMain
+	.items
+		.items-wrap
+			margin: 0
+			@media only screen and (max-width:991px)
+				width: 50%
+			@media only screen and (max-width:761px)
+				width: 100%	
+			.item
+				border: 6px solid #e5bd19
+				vertical-align: middle
+				//width: 290px
+				height: 372px
+				margin-right: 35px
+				margin-bottom: 35px
+				margin-top: 50px
+				position: relative
+				img
+					position: relative
+					top: -30px
+					width: 100%
+				.item-title
+					background-color: $colorTopMenu
+					color: $colorBase
+					position: absolute
+					right: 20px
+					padding: 10px
+					text-transform: uppercase
+					em
+						font-style: normal
+						display: block
+					p
+						display: block
+				.services
+					li
+						a
+							color: $colorBase2
+							display: block
+							margin: 10px
+							background-image: url("../img/dot.png")
+							background-position: center bottom
+							background-repeat-Y: no-repeat
+							//min-height: 50px
+							display: block
+							//border: 1px solid red
+							font-size: 13px
+							&:hover
+								text-decoration: underline
+								color: $colorTopMenu
+								span
+									//border-bottom: 1px solid red
+									text-decoration: underline
+							span
+								background-color: $colorBase
+								margin: 10px 0
+								display:block
+								vertical-align: bottom
+								//text-align-last: justify
+							.servis-name
+								float: left
+								text-align: left
+								width: 150px
+								display: block
+								overflow: hidden
+
+
+							.price
+								float: right
+								text-align: right
+	.problem
+		margin-top: 100px
+		height: 200px
+		background-image: url("../img/bg-arrow.png")
+		background-repeat: no-repeat
+		width: 100%
+		background-size: cover
+		background-position: center top
+		position: relative
+		margin-bottom: 50px
+		.people-wrap
+			width: 260px
+			height: 100%
+
+		img
+			height: 288px
+			position: absolute
+			bottom: 0
+		.preblem-form
+			float: right
+			margin-left: 260px
+			h3
+				font-size: 30px
+				margin-top: 65px
+				text-align: right
+				white-space: nowrap
+		.form-wrap
+			float: right
+			position: relative
+			z-index: 10
+			form
+				vertical-align: middle
+				float: right
+				input
+					width: 276px
+					height: 45px
+					background-color: $colorBase
+					border-radius: 5px
+					margin: 0 5px
+					text-align: center
+				button
+					width: 369px
+					height: 45px
+					background-color: $colorTopMenu
+					border-radius: 5px
+					margin: 0 5px
+					text-align: center
+					color: $colorBase
+					border: none
+					-webkit-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+					-moz-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+					box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+	.special-title
+		text-transform: uppercase
+		h2
+			font-size: 46px
+		strong
+			font-weight: 900
+			&:after
+				content: ""
+				display: block
+				height: 7px
+				width: 71px
+				margin-top: 10px
+				background-color: $colorMain
+.special
+	.special-wrap
+		.avatar
+			width: 230px
+			overflow: hidden
+			height: 300px
+			border: 1px solid red
+			position: relative
+			img
+				width: 150%
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				bottom: 0
+				left: 0
+				right: 0
+		.about
+			margin-left: 20px
+			h4
+				margin: 0
+				font-size: 28px
+			p
+				margin-top: 20px
+.map
+	text-transform: uppercase
+	h2
+		font-size: 46px
+		&:after
+			content: ""
+			display: block
+			height: 7px
+			width: 71px
+			margin-top: 10px
+			background-color: $colorMain
+		strong
+			font-weight: 900
+
+

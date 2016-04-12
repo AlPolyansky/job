@@ -1,0 +1,82 @@
+#problem
+	.problem
+		margin-top: 100px
+		background-image: url("../img/bg-arrow.png")
+		background-repeat: no-repeat
+		width: 100%
+		background-size: cover
+		background-position: center top
+		position: relative
+		.container
+			position: relative
+			.row
+				margin-bottom: 0
+		&_wrap-people
+			&_people
+				position: absolute
+				left: -20px
+				//top: -62px
+				bottom: 0
+				transform: translateX(-20px)
+				img
+					//width: 100%
+		&_form-wrap
+			padding-left: 10%
+			margin-top: 140px
+			position: relative
+			z-index: 100
+			margin-bottom: 30px
+			padding-top: 60px
+			&_descr
+				text-transform: uppercase
+				font-size: 30px
+				padding-left: 20%
+				&_title
+					p
+						display: inline
+						@media only screen and (max-width : 601px)
+							font-size: 30px
+					span
+						@media only screen and (max-width : 601px)
+							font-size: 17px
+						display: block
+						font-size: 25px
+						margin-top: 10px
+						text-transform: none
+					strong
+						font-weight: 900
+						text-transform: uppercase
+				&_form
+					form
+						padding-top: 28px
+						font-size: 16px
+						position: relative
+						left: 100px
+						@media only screen and (max-width : 991px)
+							left: 0
+						input
+							border: none
+							width: 30%
+							border-radius: 5px
+							height: 40px
+							border: 2px solid $colorBase4
+							text-align: center
+							border-radius: 5px
+							background-color: $colorBase
+							@media only screen and (max-width : 992px)
+								width: 100%
+						button
+							border: none
+							border-radius: 5px
+							height: 40px
+							padding: 10px
+							//width: 100%
+							display: inline-block
+							background-color: $colorTopMenu
+							margin: 0 auto
+							display: inline-block
+							text-transform: uppercase
+							color: $colorBase
+							flot: right
+							@media only screen and (max-width : 992px)
+								width: 100%

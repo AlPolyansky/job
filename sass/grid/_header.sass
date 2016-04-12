@@ -1,0 +1,172 @@
+#header
+	background-image: url("../img/header-bg-2.png")
+	height: $heightHeader
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center bottom
+	width: 100%
+	.top-menu
+		background-color: $colorTopMenu
+		height: $heightTopMenu
+		ul
+			display: table
+			width: 100%
+			vertical-align: middle
+			height: $heightTopMenu
+			li
+				display: table-cell
+				text-align: center
+				vertical-align: middle
+				text-transform: uppercase
+				padding: 0 15px
+				position: relative
+				border-right: 1px solid rgba($colorBase,.5)
+				&:hover
+					background-color: $colorBase
+					a
+						color: $colorBase2
+						
+						span
+							//font-weight: 900
+				a
+					color: rgba($colorBase,.8)
+					display: block
+					height: 100%
+					vertical-align: middle
+
+					span
+						position: relative
+						top: 15px
+			#lvl2
+				position: absolute
+				background-color: $colorBase
+				padding-top: 12px
+				margin-left: -15px
+				display: none
+				li
+					display: inline-block
+					text-align: left
+					width: 300px
+					margin: 0
+					padding: 0
+					a
+						color: $colorBase2
+						text-align: left
+						display: block
+						margin: 0
+						padding: 10px
+						padding-left: 30px
+						text-transform: none
+						font-weight: 900
+						&:hover
+							background-color: $colorTopMenu
+							color: $colorBase
+	.logo-wrap
+		margin-top: 12px
+		margin-left: 15px
+	.header-title
+		margin-top: 12px
+		font-size: 16px
+		color: $colorBase
+		font-weight: 100
+		p
+			text-align: center
+			margin: 10px
+		address
+			text-align: center
+		.header-title-help
+			text-transform: uppercase
+		a
+			color: $colorTopMenu
+			text-decoration: underline
+	.phone-wrap
+		color: $colorBase
+		address
+			//float: right
+			margin-top: 12px
+			font-size: 30px
+			margin-bottom: 12px
+		p
+			//float: right
+			a
+				margin-left: 8px
+				color: $colorTopMenu
+				text-decoration: underline
+	.header_title
+		//clear: both
+		text-align: center
+		strong
+			color: $colorBase
+			position: relative
+			top: 50px
+			font-size: 46px
+			line-height: 60px
+	.header-type
+		margin: 0 auto
+		text-align: center
+		background-image: url("../img/type.png")
+		background-repeat: no-repeat
+		height: 72px
+		//width: 674px
+		background-position: center
+		top: 100px
+		@media only screen and (max-width : 992px)
+			background-image: url("../img/mini-type.png")
+		p
+			text-transform: uppercase
+			position: relative
+			top: 26px
+			font-size: 18px
+			i
+				position: absolute
+				background-image: url("../img/watch.png")
+				width: 20px
+				height: 27px
+				left: 80px
+				top: -6px
+	.dop-info
+		text-align: center
+		color: $colorBase
+		top: 150px
+		position: relative
+		line-height: 20px
+		strong
+			color: $colorMain
+		i
+			background-image: url("../img/arrow.png")
+			width: 24px
+			height: 13px
+			position: absolute
+			margin: auto
+			left: 0
+			right: 0
+			top: 120%
+	.header-form
+		position: relative
+		top: 200px
+		text-align: center
+		white-space: nowrap
+		input
+			margin: auto
+			width: 271px
+			height: 45px
+			background-color: $colorBase
+			border-radius: 5px
+			margin: 0 5px
+			text-align: center
+			@media only screen and (max-width : 991px)
+				display: block
+				margin: 0 auto
+		button
+			@extend input
+			background-color: $colorTopMenu
+			color: $colorBase
+			border: none
+			-webkit-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+			-moz-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+			box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+
+
+
+
+

@@ -1,0 +1,69 @@
+#recall
+	.recall
+		margin: 20px 0
+		font-family: $fontMainLight
+		&_title
+			padding: 0 .75rem
+			font-size: 46px
+			text-transform: uppercase
+			font-weight: 100
+			margin-bottom: 40px
+			@media only screen and (max-width : 601px)
+				font-size: 38px
+			&:after
+				content: ""
+				display: block
+				height: 7px
+				width: 71px
+				margin-top: 10px
+				background-color: $colorMain
+			strong
+				font-weight: 900
+		&_doc-wrap
+			//background-color: red
+			&_doc
+				img
+					width: 100%
+
+
+
+
+
+
+		&_page-wrap
+			text-align: center
+			position: relative
+			&_line
+				height: 2px
+				width: 100%
+				position: absolute
+				background-color: #FFF
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+				background-color: $colorBase3
+			&_page
+				display: inline-block
+				background-color: $colorBase
+				border: 2px solid $colorBase3
+				color: $colorBase3
+				height: 34px
+				width: 33px
+				line-height: 34px
+				vertical-align: middle
+				cursor: pointer
+				position: relative
+				z-index: 10
+			.active-page
+				border: 4px solid $colorMain
+				color: $colorMain
+				line-height: 30px
+	.wrap-number-page
+		display: inline-block
+		padding: 10px
+		position: relative
+		z-index: 100
+		background-color: $colorBase
+	.hidden
+		@media only screen and (max-width : 601px)
+			display: none
