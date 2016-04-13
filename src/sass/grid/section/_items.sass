@@ -1,0 +1,156 @@
+#items
+	.items
+		h2
+			margin-top: 86px
+			font-family: $fontMainLight
+			padding: 0
+			strong
+				display: block
+			@media only screen and (max-width : 601px)
+				font-size: 38px
+				margin-top: 45px
+				strong
+					display: inline
+		&_wrap-items
+			margin-top: 61px
+			font-size: 0
+			text-align: justify
+			text-align: center
+			&_item
+				font-size: 16px
+				height: 374px
+				display: inline-block
+				vertical-align: top
+				border: 6px solid $colorMain
+				width: 100%
+				max-width: 300px
+				margin-right: 45px
+				margin-bottom: 100px
+				position: relative
+				&:last-child
+					margin-right: 0
+				@media only screen and (min-width : 991px)
+					&:nth-child(3n+3)
+						margin-right: 0
+				@media only screen and (max-width : 990px)
+					&:nth-child(2n+2)
+						margin-right: 0
+				@media only screen and (max-width : 645px)
+					&
+						margin-right: 0
+						max-width: 399px
+				img
+				   position: relative
+				   top: -60px
+				   max-width: 300px
+				   left: 0
+				   float: left
+				   width: 100%
+				   @media only screen and (max-width : 645px)
+				   	float: none
+				&_info
+					text-align: left
+					display: inline-block
+					position: absolute
+					right: 14px
+					top: 20px
+					@media only screen and (max-width : 645px)
+						right: 60px
+					&>span
+						background-color: $colorTopMenu
+						position: relative
+						z-index: 100
+						padding: 5px
+						text-transform: uppercase
+						font-family: $fontMainLight
+						color: $colorBase
+						display: inline-block
+						float: left
+				&_price-wrap
+					font-family: $fontMainLight
+					font-weight: 400
+					position: relative
+					top: -60px
+					clear: both
+					padding: 10px
+					display: inline-block
+					margin-bottom: 5px
+					&_price
+						display: inline
+						.col
+							padding: 0
+							float: none
+						background-image: url("../img/dot.png")
+						background-repeat: repeat-X
+						width: 100%
+						background-position: center bottom
+						color: $colorBase2
+						margin: 10px 0
+						&:last-child
+							&>div
+								background-color: inherit
+								&>span
+									background-color: inherit
+						&:hover
+							color: $colorTopMenu
+							
+							span
+								text-decoration: underline
+
+						&_name-wrap
+							display: inline-block
+							text-align: left
+							max-width: 160px
+							width: 100%
+							&_name
+								background-color: $colorBase
+								display: inline-block
+								padding-bottom: 12px
+								font-size: 13px
+						&_num-wrap
+							text-align: right
+							display: inline-block
+							vertical-align: bottom
+							&_num
+								display: inline-block
+								background-color: $colorBase
+								padding-bottom: 12px
+								font-size: 13px
+								&:last-child
+									background-color: none
+		&_type
+			width: 100%
+			max-width: 645px
+			background-image: url("../img/item-type.png")
+			height: 65px
+			margin: 0 auto
+			text-align: center
+			&>strong
+				font-size: 18px
+				color: $colorBase
+				text-transform: uppercase
+				font-family: $fontMainLight
+				font-weight: 900
+				line-height: 65px
+				position: relative
+				display: inline-block
+				@media only screen and (max-width : 645px)
+					font-size: 16px
+				&>i
+					width: 35px
+					display: block
+					height: 40px
+					background-image: url("../img/item-ico.png")
+					position: absolute
+					top: 8px
+					left: -50px
+					@media only screen and (max-width : 645px)
+						left: -40px
+
+
+			@media only screen and (max-width : 645px)
+				max-width: 399px
+
+
+
+

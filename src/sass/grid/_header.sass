@@ -1,133 +1,352 @@
-header
-	background-image: url("../img/header-bg-2.png")
-	height: $heightHeader
-	background-repeat: no-repeat
-	background-size: cover
-	background-position: center top
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&subset=latin,cyrillic);
+
+.container
 	width: 100%
-	.top-menu-wrap
-		background-color: $colorTopMenu
-		height: $heightTopMenu
-	.top-menu
-		height: $heightTopMenu
-		display: table
-		@media only screen and(max-width : 991px)
-			display: none
-		&>ul
-			width: 100%
-			display: table-row
+	max-width: $widthContainer
+.row
+	margin-left: 0!important
+	margin-right: 0!important
+	margin-bottom: 0!important
+
+#header
+	.header
+		background-image: url("../img/header-bg-2.png")
+		background-repeat: no-repeat
+		font-family: 'Fira Sans', sans-serif;
+		background-size: cover
+		background-position: center bottom
+		width: 100%
+		min-height: 500px
+		overflow: hidden
+		&_top_menu
+			background-color: $colorTopMenu
 			height: $heightTopMenu
-			vertical-align: middle
-			&>li
-				display: table-cell
-				vertical-align: middle
-				height: 100%
-				text-align: center
-				&>a
-					color: $colorBase
-					text-transform: uppercase
-					font-family: $fontMainLight
-					text-decoration: none
-					font-size: 13px
-					display: table-cell
-					vertical-align: middle
-					height: 100%
-					&>span
-						display: block
-						padding: 16px 0
+			@media only screen and (max-width : 992px)
+				width: 100%
+				position: absolute
+			ul
+				@media only screen and (max-width : 992px)
+					display: none
+				li
+					width: (100 / 8) +%
+					float: left
+					height: $heightTopMenu
+					text-align: center
+					border-right: 1px solid rgba($colorBase,.8)
+					position: relative
 					&:hover
 						background-color: $colorBase
-						color: $colorBase2
-		.top-menu_lvl-2
-			position: absolute
-			display: none
-			overflow: hidden
-			&>li
+						font-weight: 900
+						a
+							color: $colorBase2
+						&>ul
+							display: block
+					&>a
+						text-align: center
+						color: rgba($colorBase,.8)
+						text-transform: uppercase
+						font-size: 14px
+						display: block
+						height: 100%
+						padding-top: 20px
+					&>ul 
+						background-color: $colorBase
+						display: block
+						position: absolute
+						min-width: 300px
+						display: none
+						padding-top: 20px
+						position: relative
+						z-index: 2000
+						&>li
+							display: block
+							background-color: $colorBase
+							width: 100%
+							margin: 0
+							padding: 0
+							height: auto
+							&>a
+								color: $colorBase2
+								display: block
+								text-align: left
+								padding-top: 0
+								padding: 10px 0
+								padding-left: 20px
+								font-weight: 100
+								&:hover
+									background-color: $colorTopMenu
+									color: $colorBase
+		&_dop-info
+			position: relative
+			border-bottom: 1px solid rgba($colorBase,.4)
+			@media only screen and (max-width : 992px)
+				z-index: 1020
+				margin-top: 5px
+			margin-top: 15px
+			&_help
+				@media only screen and (max-width : 992px)
+					margin-top: 20px
+					margin-bottom: 16px
+				&_title
+					text-transform: uppercase
+				p
+					text-align: center
+					color: $colorBase
+					strong
+						text-align: center
+				a
+					color: $colorTopMenu
+					text-decoration: underline
+			span
+				@media only screen and (max-width : 992px)
+					display: inline-block
+				text-align: center
 				display: block
-				width: 300px
-				background-color: $colorBase
+				color: $colorBase
+				margin: 0 auto
+			&_logo
+				@media only screen and (max-width : 992px)
+					width: 100%
+					text-align: center
+					img
+						height: 59px
+						display: inline-block
+			&_mobile-menu
+				height: 30px
+				width: 30px
+				margin: 0 auto
 				display: block
-				text-align: left
-				&:first-child
-					padding-top: 11px
-				&>a
+				@media only screen and (min-width : 992px)
+					display: none
+
+			&_phone
+				color: $colorBase
+				text-align: right
+				&_phone-wrap
+					white-space: nowrap
+					color: $colorBase
+				address
+					//float: right
+					white-space: nowrap
+					font-size: 30px
+					margin-bottom: 12px
+					@media only screen and (max-width : 992px)
+						text-decoration: underline
+						font-size: 24px
+				p
+					//float: right
+					white-space: nowrap
+					display: inline-block
+					text-align: right
+					a
+						margin-left: 8px
+						color: $colorTopMenu
+						@media only screen and (max-width : 992px)
+							display: none
+						text-decoration: underline
+		&_title
+			font-family: $fontMainLight
+			font-size: 46px
+			color: $colorBase
+			font-weight: 900
+			margin-top: 55px
+			@media only screen and (max-width : 992px)
+				h1
+					font-size: 31px
+			&_type
+				width: 675px
+				height: 76px
+				background-image: url("../img/type.png")
+				background-repeat: no-repeat
+				margin: 0 auto
+				margin-top: 50px
+				background-size: contain
+				margin-bottom: 50px
+				@media only screen and (max-width : 992px)
+					background-image: url("../img/mini-type.png")
+					width: 471px
+					margin-top: 12px
+				span
+					font-size: 20px
 					color: $colorBase2
-					text-decoration: none
-					font-family: "$fontMainRegular"
-					font-size: 13px
+					position: relative
+					top: 5px
+					display: inline-block
+					text-transform: uppercase
+					@media only screen and (max-width : 992px)
+						font-size: 15px
+						top: 12px
+					i
+						width: 20px
+						height: 27px
+						display: inline-block
+						background-image: url("../img/watch.png")
+						position: relative
+						top: 3px
+						left: -11px
+						@media only screen and (max-width : 992px)
+							width: 20px
+							height: 24px
+							background-size: contain
+							background-repeat: no-repeat
+							left: -5px
+			&_info
+				font-size: 18px
+				font-weight: 100
+				@media only screen and (max-width : 992px)
+					font-size: 16px
+					&>span
+						&>span
+							display: block
+				&>span
+					&>span
+						color: $colorMain
+						line-height: 30px
+						vertical-align: middle
+				&>em
 					display: block
-					padding: 8px 0
-					padding-left: 26px
-					&:hover
+				&>i
+					height: 13px
+					width: 24px
+					background-image: url("../img/arrow.png")
+					display: block
+					margin: 0 auto
+					margin-top: 27px
+					margin-bottom:  27px
+			&_form
+				&>form
+					margin-bottom: 110px
+					input
+						display: inline-block
+						background-color: $colorBase
+						width: 278px
+						height: 45px
+						border-radius: 3px
+					button
+						display: inline-block
 						background-color: $colorTopMenu
 						color: $colorBase
-.top-menu_lvl-1:hover .top-menu_lvl-2
-	display: block
-	z-index: 200
-.top-menu_lvl-1:hover
-	background-color: $colorBase
-	color: #111
-.header-info
-	@media only screen and(max-width : 991px)
-		.logo-wrap
-			min-width: 190px
-	&_logo
-		height: 65px
-		margin-left: 20px
-		margin-top: 13px
-		@media only screen and(max-width : 991px)
-			height: 56px
-			margin-top: 5px
-	&_title
-		margin-top: 13px
+						font-weight: 600
+						border: none
+						font-size: 16px
+						height: 47px
+						width: 278px
+						border-radius: 3px
+						color: $colorBase
+						border: none
+						-webkit-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+						-moz-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+						box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+
+
+
+
+
+	.logo-wrap
+		margin-top: 12px
+		margin-left: 15px
+	.header-title
+		margin-top: 12px
+		font-size: 16px
 		color: $colorBase
+		font-weight: 100
+		p
+			text-align: center
+			margin: 10px
+		address
+			text-align: center
+		.header-title-help
+			text-transform: uppercase
+		a
+			color: $colorTopMenu
+			text-decoration: underline
+	.phone-wrap
+		color: $colorBase
+		address
+			//float: right
+			margin-top: 12px
+			font-size: 30px
+			margin-bottom: 12px
+		p
+			//float: right
+			a
+				margin-left: 8px
+				color: $colorTopMenu
+				text-decoration: underline
+	.header_title
+		//clear: both
 		text-align: center
-		font-family: $fontMainLight
+		strong
+			color: $colorBase
+			position: relative
+			top: 50px
+			font-size: 46px
+			line-height: 60px
+	.header-type
+		margin: 0 auto
+		text-align: center
+		background-image: url("../img/type.png")
+		background-repeat: no-repeat
+		height: 72px
+		//width: 674px
+		background-position: center
+		top: 100px
+		@media only screen and (max-width : 992px)
+			background-image: url("../img/mini-type.png")
+		p
+			text-transform: uppercase
+			position: relative
+			top: 26px
+			font-size: 18px
+			i
+				position: absolute
+				background-image: url("../img/watch.png")
+				width: 20px
+				height: 27px
+				left: 80px
+				top: -6px
+	.dop-info
+		text-align: center
+		color: $colorBase
+		top: 150px
+		position: relative
 		line-height: 20px
 		strong
-			font-weight: 100
-			font-style: normal
-		address
-			margin: 0 auto
-			width: 60%
-		a
-			color: $colorTopMenu
-			display: inline-block
-			text-decoration: underline
-	&_phone
-		margin-top: 13px
-		float: right
-		@media only screen and(max-width : 991px)
-			margin-top: 5px
-			address
-				border-bottom: 1px solid $colorBase
-				padding: 0
-				font-size: 24px
-				white-space: nowrap
-				@media only screen and(max-width : 479px)
-					font-size: 18px!important
-			p
-				text-align: right
-				font-size: 16px
-				a
-					display: none
-		&>address
-			text-align: right
-			font-size: 30px
+			color: $colorMain
+		i
+			background-image: url("../img/arrow.png")
+			width: 24px
+			height: 13px
+			position: absolute
+			margin: auto
+			left: 0
+			right: 0
+			top: 120%
+	.header-form
+		position: relative
+		top: 200px
+		text-align: center
+		white-space: nowrap
+		input
+			margin: auto
+			width: 271px
+			height: 45px
+			background-color: $colorBase
+			border-radius: 5px
+			margin: 0 5px
+			text-align: center
+			@media only screen and (max-width : 991px)
+				display: block
+				margin: 0 auto
+		button
+			@extend input
+			background-color: $colorTopMenu
 			color: $colorBase
-		&>p
-			text-align: right
-			color: $colorBase
-		a
-			text-align: right
-			display: inline-block
-			margin-left: 20px
-			color: $colorTopMenu
-			text-decoration: underline
-	.mobile-button
-		height: 20px
-		width: 20px
-		background-color: red
+			border: none
+			-webkit-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+			-moz-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+			box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+
 
 
 

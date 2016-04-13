@@ -72,7 +72,8 @@ gulp.task('sass',function(){
 gulp.task('scripts', function(){
 	return gulp.src([
 		'src/libs/jquery/dist/jquery.min.js',
-		'src/libs/superfish/dist/js/superfish.min.js'//тут пишем пути к js файлам библиотек
+		'src/libs/Materialize/dist/js/materialize.min.js',
+		'src/libs/owl.carousel.2.0.0-beta.2.4/owl.carousel.min.js'//тут пишем пути к js файлам библиотек
 	])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
@@ -91,8 +92,9 @@ gulp.task('browser-sync',function(){
 
 gulp.task('css-libs', ['sass'], function(){
 	return gulp.src([
+		'src/libs/Materialize/dist/css/materialize.min.css',
 		'src/libs/reset/reset.css',
-		'src/libs/bootstrap/bootstrap.css'
+		'src/libs/owl.carousel.2.0.0-beta.2.4/assets/owl.carousel.css'
 		 //тут пишем пути к css файлам библиотек
 	])
 	.pipe(concat('libs.min.css'))
