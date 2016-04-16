@@ -1,13 +1,14 @@
 #question
 	.question
 		margin-top: 100px
-		//height: 200px
 		background-image: url("../img/bg-arrow.png")
 		background-repeat: no-repeat
 		width: 100%
 		background-size: cover
 		background-position: center top
 		position: relative
+		@media only screen and (max-width : 857px)
+			margin-top: 50px
 		.container
 			position: relative
 			.row
@@ -15,65 +16,128 @@
 		&_wrap-people
 			&_people
 				position: absolute
-				left: -20px
-				//top: -62px
-				bottom: 0
-				transform: translateX(-20px)
-				img
-					//width: 100%
+				left: -55px
+				bottom: -3px
+				max-width: 165px
+				width: 100%
+				@media only screen and (max-width : 957px)
+					max-width: 194px
+				@media only screen and (max-width : 420px)
+					left: -65px
 		&_form-wrap
-			padding-left: 10%
-			margin-top: 140px
+			width: 100%
+			max-width: 990 - 162px
+			float: right
+			margin-top: 34px
 			position: relative
 			z-index: 100
-			margin-bottom: 30px
-			padding-top: 60px
+			overflow: hidden
+			text-align: center
+			padding: 0
+			@media only screen and (max-width : 957px)
+				padding-left: 10%
+			@media only screen and (max-width : 857px)
+				padding-left: 20%
+			@media only screen and (max-width : 557px)
+				padding-left: 25%
+				margin-top: 29px
+			@media only screen and (max-width : 420px)
+				padding-left: 30%
 			&_descr
 				text-transform: uppercase
-				font-size: 32px
-				padding-left: 20%
+				margin: 0 auto
 				&_title
+					text-align: left
 					p
-						display: inline
-						@media only screen and (max-width : 601px)
-							font-size: 30px
-					span
-						@media only screen and (max-width : 601px)
-							font-size: 17px
 						display: block
+						font-size: 32px
+						margin: 0 auto
+						display: inline-block
+						@media only screen and (max-width : 957px)
+							font-size: 30px
+						@media only screen and (max-width : 420px)
+							font-size: 24px
+					span
+						font-size: 25px
+						display: block
+						margin-bottom: 20px
 						font-size: 25px
 						margin-top: 10px
 						text-transform: none
+						@media only screen and (max-width : 957px)
+							font-size: 17px
+						@media only screen and (max-width : 557px)
+							margin-bottom: 10px
+							margin-top: 5px
+						@media only screen and (max-width : 420px)
+							font-size: 16px
 					strong
 						font-weight: 900
 						text-transform: uppercase
 				&_form
 					form
-						//display: none
-						padding-top: 28px
+						padding-bottom: 21px
+						//padding-top: 28px
 						font-size: 16px
+						font-size: 0
+						text-align: left
+						@media only screen and (max-width : 957px)
+							position: relative
 						input
 							border: none
-							width: 30%
 							border-radius: 5px
 							height: 40px
+							display: inline-block
 							border: 2px solid $colorBase4
 							text-align: center
 							border-radius: 5px
 							background-color: $colorBase
-							@media only screen and (max-width : 992px)
-								width: 100%
+							max-width: 260px
+							width: 100%
+							font-size: 16px
+							margin-right: 13px
+							margin-bottom: 5px
+							&:focus
+								box-shadow: none!important
+							&::-webkit-input-placeholder 
+								color: #808080
+							&::-moz-placeholder 
+								color: #808080
+							&:-moz-placeholder
+						   	color: #808080
+							&:-ms-input-placeholder
+						   color: #808080
+							@media only screen and (max-width : 957px)
+								max-width: 230px
+							@media only screen and (max-width : 857px)
+								display: block
+								max-width: 75%
+							@media only screen and (max-width : 420px)
+								max-width: 170%
+								width: 93.5%
 						button
 							border: none
 							border-radius: 5px
-							height: 40px
-							//width: 100%
-							display: inline-block
+							height: 47px
+							font-size: 16px
+							width: 268px
+							display: block
+							vertical-align: top
 							background-color: $colorTopMenu
 							margin: 0 auto
+							position: relative
+							top: -2px
 							display: inline-block
 							text-transform: uppercase
-							color: $colorBase
-							flot: right
-							@media only screen and (max-width : 992px)
-								width: 100%
+							color: $colorBase	
+							-webkit-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+							-moz-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+							box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+							@media only screen and (max-width : 957px) and (min-width: 858px)
+								max-width: 230px
+							@media only screen and (max-width : 857px)
+								max-width: 170%
+								width: 75.5%
+							@media only screen and (max-width : 420px)
+								max-width: 170%
+								width: 95%

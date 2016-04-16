@@ -6,6 +6,8 @@
 		background-position: center bottom
 		background-size: cover
 		&_help
+			@media only screen and (max-width : $extraSmallDevicesMax)
+				font-size: 14px
 			margin-bottom: 30px
 			&_title
 				text-transform: uppercase
@@ -25,29 +27,59 @@
 			color: $colorBase
 			margin: 0 auto
 		&_logo
+				@media only screen and (max-width : #{$largeDevisesMin})
+					width: 100%
+					text-align: center
+					margin-top: 3px
+					display: inline-block
+					img
+						height: 59px
+						display: inline-block
+						@media only screen and (max-width : $extraSmallDevicesMax)
+							height: 50px
 		&_phone
-			color: $colorBase
-			&_phone-wrap
-				white-space: nowrap
 				color: $colorBase
-			address
-				float: right
-				white-space: nowrap
-				font-size: 30px
-				margin-bottom: 12px
-				@media only screen and (max-width : 601px)
-					text-decoration: underline
-			p
-				float: right
-				white-space: nowrap
-				a
-					margin-left: 8px
-					color: $colorTopMenu
-					text-decoration: underline
+				text-align: right
+				font-weight: 700
+				text-align: center
+				@media only screen and (max-width : 600px)
+					position: relative
+					//right: 55px
+				&-wrap
+					white-space: nowrap
+					color: $colorBase
+					display: inline-block
+					text-align: right
+				address
+					white-space: nowrap
+					font-size: 30px
+					margin-bottom: 12px
+					@media only screen and (max-width : 992px)
+						text-decoration: underline
+						font-size: 24px
+						margin-top: 8px
+					@media only screen and (max-width : $extraSmallDevicesMax)
+						font-size: 16px
+						margin-bottom: 6px
+						margin-top: 10px
+				p
+					white-space: nowrap
+					display: inline-block
+					text-align: right
+					@media only screen and (max-width : $extraSmallDevicesMax)
+						font-size: 12px
+					a
+						margin-left: 8px
+						color: $colorTopMenu
+						@media only screen and (max-width : 992px)
+							display: none
+						text-decoration: underline
 		&_copy
 			text-align: center
 			background-color: $colorFooter
-			color: $colorBase
+			color: rgba($colorBase,.3)
 			min-height: 40px
+			@media only screen and (max-width : 601px)
+				font-size: 11px
 			p
 				padding: 10px 0

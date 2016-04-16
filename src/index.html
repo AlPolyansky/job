@@ -5,1263 +5,1290 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 </head>
 <body>
-	<div id="wrapper">
-		<div class="owl-carousel">
-			<div> Your Content </div>
-			<div> Your Content </div>
-			<div> Your Content </div>
-			<div> Your Content </div>
-			<div> Your Content </div>
-			<div> Your Content </div>
-			<div> Your Content </div>
+<div id="modal" class="modal">
+	<div class="modal-content">
+		<div class="modal-close"></div>
+		<h2>Выберите город</h2>
+		<div class="modal-city-wrap">
+			<div class="modal-city-wrap_modal-city">
+				<div class="container">
+					<div class="row">
+						<div class="col s6">
+							<a href="#">Москва</a>
+							<a href="#">Санкт-Петербург</a>
+							<a href="#">Ростов-на-Дону</a>
+							<a href="#">Краснодар</a>
+						</div>
+						<div class="col s6">
+							<a href="#">Москва</a>
+							<a href="#">Санкт-Петербург</a>
+							<a href="#">Ростов-на-Дону</a>
+							<a href="#">Краснодар</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<header id="header">
-			<div class="header">
-				<div class="header_top_menu">
-					<div class="container">
-						<div class="row">
-							<div class="header_top_menu_wrap">
-								<ul>
-									<li><a href="#">ремонт ноутбуков</a></li>
-									<li><a href="#">ремонт компьютеров</a></li>
-									<li>
-										<a href="#"><span>ремонт моноблоков</span></a>
-										<ul>
-											<li><a href="#">Перегрев</a></li>
-											<li><a href="#">Чистка пыли</a></li>
-											<li><a href="#">Установк/Переустановка</a></li>
-											<li><a href="#">Настройка программ</a></li>
-											<li><a href="#">Зависает</a></li>
-											<li><a href="#">Вирусы</a></li>
-										</ul>
-									</li>
-									<li><a href="#">восстановление <br>данных</a></li>
-									<li><a href="#">настройка <br>windows</a></li>
-									<li><a href="#">настройка <br>интернета</a></li>
-									<li><a href="#">антивирусная <br>защита</a></li>
-									<li><a href="#">установка <br>программ</a></li>
-								</ul>
-							</div>
+	</div>
+</div>
+
+<div id="mobile-mnu">
+	<ul id="slide-out" class="side-nav">
+		<li class="close-nav"><i></i></li>
+		<li><a href="#1">ремонт ноутбуков</a></li>
+		<li><a href="#2">ремонт компьютеров</a></li>
+		<li>
+			<a href="#3"><i></i>ремонт моноблоков</a>
+			<ul>
+				<li><a href="#3-1">Перегрев</a></li>
+				<li><a href="#3-2">Чистка пыли</a></li>
+				<li><a href="#3-3">Установка/Переустаyновка</a></li>
+				<li><a href="#3-4">Настройка программ</a></li>
+				<li><a href="#3-5">Зависает</a></li>
+				<li><a href="#3-6">Вирусы</a></li>
+			</ul>
+		</li>
+		<li><a href="#4">восстановление данных</a></li>
+		<li><a href="#5">настройка windows</a></li>
+		<li><a href="#6">настройка интернета</a></li>
+		<li><a href="#7">антивирусная защита</a></li>
+		<li><a href="#8">установка программ</a></li>
+	</ul>
+</div>
+<div id="wrapper">
+	<header id="header">
+		<div class="header">
+			<div class="header_top_menu">
+				<div class="container">
+					<div class="row">
+						<div class="header_top_menu_wrap">
+							<ul>
+								<li><a href="#">ремонт<br>ноутбуков</a></li>
+								<li><a href="#">ремонт<br>компьютеров</a></li>
+								<li>
+									<a href="#"><span>ремонт<br>моноблоков</span></a>
+									<ul>
+										<li><a href="#">Перегрев</a></li>
+										<li><a href="#">Чистка пыли</a></li>
+										<li><a href="#">Установк/Переустановка</a></li>
+										<li><a href="#">Настройка программ</a></li>
+										<li><a href="#">Зависает</a></li>
+										<li><a href="#">Вирусы</a></li>
+									</ul>
+								</li>
+								<li><a href="#">восстановление<br>данных</a></li>
+								<li><a href="#">настройка<br>windows</a></li>
+								<li><a href="#">настройка<br>интернета</a></li>
+								<li><a href="#">антивирусная<br>защита</a></li>
+								<li><a href="#">установка<br>программ</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="header_dop-info">
-					<div class="container">
-						<div class="row">
-							<div class="col l4 m4 s5">
-								<div class="header_dop-info_logo">
-									<img src="img/logo.png" alt="#">
+			</div>
+			<div class="header_dop-info">
+				<div class="container">
+					<div class="row">
+						<div class="col l4 m4 s5">
+							<a href="index.html" class="header_dop-info_logo">
+								<img src="img/logo.png" alt="#">
+							</a>
+						</div>
+						<div class="col l4 m4 s7 push-l4">
+							<div class="header_dop-info_phone">
+								<div class="header_dop-info_phone-wrap">
+									<address>8 (909) 200-20-20</address>
+									<p>c 8:00 до 24:00<a href="#">Заказать завонок</a></p>
 								</div>
 							</div>
-							<div class="col l4 m4 s5 push-l4">
-								<div class="header_dop-info_phone">
-									<div class="header_dop-info_phone-wrap">
-										<address>8 (909) 200-20-20</address>
-										<p>c 8:00 до 24:00<a href="#">Заказать завонок</a></p>
+						</div>
+						<a href="#" data-activates="slide-out" class="button-collapse header_dop-info_mobile-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+						<div class="col l4 pull-l4 push-4 m12 s12">
+							<div class="header_dop-info_help">
+								<p class="header_dop-info_help_title">компьтерная помощь на дому</p>
+								<div>в городе <div id="city">
+									Санкт-Петербург
+									<div class="toast-content">
+
+										<div class="toast-wrap">
+											<p>Ваш город Санкт-Петербург?</p>
+											<button class="yes">Да</button>
+											<a href="#modal" class="sellect-city modal-trigger">Выбрать другой город?</a>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col l4 m4 s2">
-								<div class="header_dop-info_mobile-menu button-collapse">
-									<div class="header_dop-info_mobile-menu-wrap">
-										123
-									</div>
-								</div>
-							</div>
-							<div class="col l4 pull-l4 push-4 m12 s12">
-								<div class="header_dop-info_help">
-									<p class="header_dop-info_help_title">компьтерная помощь на дому</p>
-									<p>в городе <a href="#">Санкт-Петербург </a><span> Мучной переулок, д.3 Садовая</span></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="header_title">
-					<div class="container">
-						<div class="row">
-							<h1>Компьютерная помощь на дому<br> в Санкт-Петербурге</h1>
-						</div>
-						<div class="row">
-							<div class="header_title_type">
-								<span><i></i>выезд специалиста за 30 минут - бесплатно!</span>
-							</div>
-						</div>
-						<div class="row">
-							<div class="header_title_info">
-								<span>Оставьте заявку и получите <span>ПРОФЕССИОНАЛЬНУЮ чистку компьютера БЕСПЛАТНО</span></span>
-								<em>+ консультацию специалиста по использованию компьютера</em>
-								<i></i>
-							</div>
-						</div>
-						<div class="row">
-							<div class="header_title_form">
-								<form action="#" method="POST">
-									<input type="text" placeholder="ВАШЕ ИМЯ">
-									<input type="text" placeholder="ВАШЕ НОМЕР ТЕЛЕФОНА*">
-									<button>ВЫЗВАТЬ МАСТЕРА</button>
-								</form>
-							</div>
+							,<span> Мучной переулок, д.3 Садовая</span>
+
 						</div>
 					</div>
 				</div>
 			</div>
-		</header>
-		<section id="items">
-			<div class="items">
-				<div class="container">
-					<div class="row">
-						<h2 class="person_title">ремонт на дому любой сложности <strong>за 2 часа</strong></h2>
-					</div>
-					<div class="row">
-						<div class="items_wrap-items">
-							<div class="items_wrap-items_item">
-								<img src="img/item-1.png" alt="item">
-								<div class="items_wrap-items_item_info">
-									<span>Ремонт</span>
-									<br>
-									<span>Ноутбуков</span>
-								</div>
-								<div class="items_wrap-items_item_price-wrap">
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Замена матрицы 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Перегрев 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Чистка от пыли 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Установка/переустановка Windows  
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Настройка программ
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Исправление зависания
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Чистка от вирусов 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Диагностика ноутбука  
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="items_wrap-items_item">
-								<img src="img/item-2.png" alt="item">
-								<div class="items_wrap-items_item_info">
-									<span>Ремонт</span>
-									<br>
-									<span>Компьютеров</span>
-								</div>
-								<div class="items_wrap-items_item_price-wrap">
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Замена матрицы 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Перегрев 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Чистка от пыли 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Установка/переустановка Windows  
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Настройка программ
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Исправление зависания
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Чистка от вирусов 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Диагностика ноутбука  
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="items_wrap-items_item">
-								<img src="img/item-3.png" alt="item">
-								<div class="items_wrap-items_item_info">
-									<span>Ремонт</span>
-									<br>
-									<span>Моноблоков</span>
-								</div>
-								<div class="items_wrap-items_item_price-wrap">
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Замена матрицы 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Перегрев 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Чистка от пыли 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Установка/переустановка Windows  
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Настройка программ
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Исправление зависания
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Чистка от вирусов 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Диагностика ноутбука  
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="items_wrap-items_item">
-								<img src="img/item-4.png" alt="item">
-								<div class="items_wrap-items_item_info">
-									<span>Восстановление</span>
-									<br>
-									<span>Данных</span>
-								</div>
-								<div class="items_wrap-items_item_price-wrap">
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Замена матрицы 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Перегрев 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Чистка от пыли 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Установка/переустановка Windows  
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Настройка программ
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Исправление зависания
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Чистка от вирусов 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Диагностика ноутбука  
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="items_wrap-items_item">
-								<img src="img/item-5.png" alt="item">
-								<div class="items_wrap-items_item_info">
-									<span>Настройка</span>
-									<br>
-									<span>Windows</span>
-								</div>
-								<div class="items_wrap-items_item_price-wrap">
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Замена матрицы 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Перегрев 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Чистка от пыли 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Установка/переустановка Windows  
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Настройка программ
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Исправление зависания
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Чистка от вирусов 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Диагностика ноутбука  
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="items_wrap-items_item">
-								<img src="img/item-5.png" alt="item">
-								<div class="items_wrap-items_item_info">
-									<span>Настройка</span>
-									<br>
-									<span>Интернета</span>
-								</div>
-								<div class="items_wrap-items_item_price-wrap">
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Замена матрицы 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Перегрев 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Чистка от пыли 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Установка/переустановка Windows  
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Настройка программ
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Исправление зависания
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Чистка от вирусов 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Диагностика ноутбука  
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="items_wrap-items_item">
-								<img src="img/item-7.png" alt="item">
-								<div class="items_wrap-items_item_info">
-									<span>Антивирусная</span>
-									<br>
-									<span>Защита</span>
-								</div>
-								<div class="items_wrap-items_item_price-wrap">
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Замена матрицы 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Перегрев 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Чистка от пыли 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Установка/переустановка Windows  
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Настройка программ
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Исправление зависания
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Чистка от вирусов 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Диагностика ноутбука  
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="items_wrap-items_item">
-								<img src="img/item-8.png" alt="item">
-								<div class="items_wrap-items_item_info">
-									<span>Установка</span>
-									<br>
-									<span>Программ</span>
-								</div>
-								<div class="items_wrap-items_item_price-wrap">
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Замена матрицы 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Перегрев 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Чистка от пыли 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Установка/переустановка Windows  
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Настройка программ
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Исправление зависания
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Чистка от вирусов 
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-									<a href="#" class="items_wrap-items_item_price-wrap_price ">
-										<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
-												Диагностика ноутбука  
-											</span>
-										</div>
-										<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
-											<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
-												от 500 руб.
-											</span>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="items_type">
-							<strong><i></i>гарантия до 3 лет на все виды услуг</strong>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="problem">
-			<div class="problem">
-				<div class="container">
-					<div class="row">
-						<div class="problem_wrap-people">
-							<div class="problem_wrap-people_people">
-								<img src="img/man-2.png" alt="man-2">
-							</div>
-						</div>
-						<div class="problem_form-wrap">
-							<div class="problem_form-wrap_descr">
-								<div class="problem_form-wrap_descr_title">
-									<p><strong> иная проблема?</strong>Оставьте заявку на консультацию!</p>
-								</div>
-								<div class="problem_form-wrap_descr_form">
-									<form action="#" method="POST">
-										<input type="text">
-										<button>получите бесплатную консультацию!</button>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="person" id="person">
+		</div>
+		<div class="header_title">
 			<div class="container">
 				<div class="row">
-					<h2 class="person_title">Наши <strong>Специалисты</strong></h2>
-					<div id="person-slider">
-						<div id="person-slide">
-							
-							<div class="person_wrap" data-hash="slider-1">
-								<div class="col m3 s12">
-									<div class="person_wrap_avatar ">
-										<div class="person_wrap_avatar_img col m12 s6">
-											<img src="img/man.png" alt="men">
-										</div>
-										<div class="person_wrap_counter-wrap col m12 s6">
-											<div class="person_wrap_counter-wrap_counter">
-												<span>отремонтировал</span>
-												<div class="person_wrap_counter-wrap_counter_number">9</div>
-												<div class="person_wrap_counter-wrap_counter_number">9</div>
-												<div class="person_wrap_counter-wrap_counter_number">9</div>
-												<div class="person_wrap_counter-wrap_counter_number">9</div>
-												<span>компьютеров</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col m9 s12">
-									<div class="person_wrap_form-wrap">
-										<div class="person_wrap_form-wrap_title">
-											Владимир
-										</div>
-										<div class="person_wrap_form-wrap_descr">
-											<p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в формировании новых предложений. Задача организации, в особенности же консультация с широким активом требуют от нас анализа направлений прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании модели развития.</p> 
-										</div>
-										<div class="person_wrap_form-wrap_form">
-											<form action="#" method="POST">
-												<div class="col m4 s6">
-													<input type="text">
-												</div>
-												<div class="col m4 s6">
-													<input type="text">
-												</div>
-												<div class="col m4 s12">
-													<button>вызвать владимира</button>
-												</div>
-												
-											</form>
-										</div>
-									</div>
-
-								</div>
-							</div>
-							<div class="person_wrap" data-hash="slider-2">
-								<div class="col m3 s12">
-									<div class="person_wrap_avatar ">
-										<div class="person_wrap_avatar_img col m12 s6">
-											<img src="img/man.png" alt="men">
-										</div>
-										<div class="person_wrap_counter-wrap col m12 s6">
-											<div class="person_wrap_counter-wrap_counter">
-												<span>отремонтировал</span>
-												<div class="person_wrap_counter-wrap_counter_number">9</div>
-												<div class="person_wrap_counter-wrap_counter_number">9</div>
-												<div class="person_wrap_counter-wrap_counter_number">9</div>
-												<div class="person_wrap_counter-wrap_counter_number">9</div>
-												<span>компьютеров</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col m9 s12">
-									<div class="person_wrap_form-wrap">
-										<div class="person_wrap_form-wrap_title">
-											Владимир
-										</div>
-										<div class="person_wrap_form-wrap_descr">
-											<p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в формировании новых предложений. Задача организации, в особенности же консультация с широким активом требуют от нас анализа направлений прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании модели развития.</p> 
-										</div>
-										<div class="person_wrap_form-wrap_form">
-											<form action="#" method="POST">
-												<div class="col m4 s6">
-													<input type="text">
-												</div>
-												<div class="col m4 s6">
-													<input type="text">
-												</div>
-												<div class="col m4 s12">
-													<button>вызвать владимира</button>
-												</div>
-												
-											</form>
-										</div>
-									</div>
-
-								</div>
-							</div>
-							<div class="person_wrap" data-hash="slider-3">
-								<div class="col m3 s12">
-									<div class="person_wrap_avatar ">
-										<div class="person_wrap_avatar_img col m12 s6">
-											<img src="img/man.png" alt="men">
-										</div>
-										<div class="person_wrap_counter-wrap col m12 s6">
-											<div class="person_wrap_counter-wrap_counter">
-												<span>отремонтировал</span>
-												<div class="person_wrap_counter-wrap_counter_number">9</div>
-												<div class="person_wrap_counter-wrap_counter_number">9</div>
-												<div class="person_wrap_counter-wrap_counter_number">9</div>
-												<div class="person_wrap_counter-wrap_counter_number">9</div>
-												<span>компьютеров</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col m9 s12">
-									<div class="person_wrap_form-wrap">
-										<div class="person_wrap_form-wrap_title">
-											Владимир
-										</div>
-										<div class="person_wrap_form-wrap_descr">
-											<p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в формировании новых предложений. Задача организации, в особенности же консультация с широким активом требуют от нас анализа направлений прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании модели развития.</p> 
-										</div>
-										<div class="person_wrap_form-wrap_form">
-											<form action="#" method="POST">
-												<div class="col m4 s6">
-													<input type="text">
-												</div>
-												<div class="col m4 s6">
-													<input type="text">
-												</div>
-												<div class="col m4 s12">
-													<button>вызвать владимира</button>
-												</div>
-												
-											</form>
-										</div>
-									</div>
-
-								</div>
-							</div>
-						</div>
-					</div>
-
+					<h1>Компьютерная помощь на дому<br> в Санкт-Петербурге</h1>
 				</div>
-				<div class="person_page-wrap">
-					<div class="person_page-wrap_line"></div>
-					<div class="wrap-number-page">
-						<a href="#slider-1" class="person_page-wrap_page active-page">1</a>
-						<a href="#slider-2" class="person_page-wrap_page">2</a>
-						<a href="#slider-3" class="person_page-wrap_page">3</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="recall">
-			<div class="recal">
-				<div class="container">
-					<div class="row">
-						<h2 class="recall_title"><strong>настоящие отзывы </strong>наших клиентов</h2>
-						<div id="recal-slider">
-							<div class="recal-slide" data-hash="slider-4">
-								<div class="recall_doc-wrap col m3 s4">
-									<div class="recall_doc-wrap_doc">
-										<img src="img/doc.png" alt="doc">
-									</div>
-								</div>
-								<div class="recall_doc-wrap col m3 s4">
-									<div class="recall_doc-wrap_doc">
-										<img src="img/doc.png" alt="doc">
-									</div>
-								</div>
-								<div class="recall_doc-wrap col m3 s4">
-									<div class="recall_doc-wrap_doc">
-										<img src="img/doc.png" alt="doc">
-									</div>
-								</div>
-								<div class="recall_doc-wrap col m3 s12 hidden">
-									<div class="recall_doc-wrap_doc">
-										<img src="img/doc.png" alt="doc">
-									</div>
-								</div>
-							</div>
-							<div class="recal-slide" data-hash="slider-5">
-								<div class="recall_doc-wrap col m3 s4">
-									<div class="recall_doc-wrap_doc">
-										<img src="img/doc.png" alt="doc">
-									</div>
-								</div>
-								<div class="recall_doc-wrap col m3 s4">
-									<div class="recall_doc-wrap_doc">
-										<img src="img/doc.png" alt="doc">
-									</div>
-								</div>
-								<div class="recall_doc-wrap col m3 s4">
-									<div class="recall_doc-wrap_doc">
-										<img src="img/doc.png" alt="doc">
-									</div>
-								</div>
-								<div class="recall_doc-wrap col m3 s12 hidden">
-									<div class="recall_doc-wrap_doc">
-										<img src="img/doc.png" alt="doc">
-									</div>
-								</div>
-							</div>
-							<div class="recal-slide" data-hash="slider-6">
-								<div class="recall_doc-wrap col m3 s4">
-									<div class="recall_doc-wrap_doc">
-										<img src="img/doc.png" alt="doc">
-									</div>
-								</div>
-								<div class="recall_doc-wrap col m3 s4">
-									<div class="recall_doc-wrap_doc">
-										<img src="img/doc.png" alt="doc">
-									</div>
-								</div>
-								<div class="recall_doc-wrap col m3 s4">
-									<div class="recall_doc-wrap_doc">
-										<img src="img/doc.png" alt="doc">
-									</div>
-								</div>
-								<div class="recall_doc-wrap col m3 s12 hidden">
-									<div class="recall_doc-wrap_doc">
-										<img src="img/doc.png" alt="doc">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="recall_page-wrap">
-					<div class="recall_page-wrap_line"></div>
-					<div class="wrap-number-page">
-						<a href="#slider-4" class="recall_page-wrap_page active-page">1</a>
-						<a href="#slider-5" class="recall_page-wrap_page">2</a>
-						<a href="#slider-6" class="recall_page-wrap_page">3</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="about" id="about">
-			<div class="container">
 				<div class="row">
-					<h2 class="about_title">Вкратце о нашем <strong>сервисном центре</strong></h2>
-					<div class="about_wrap">
-						<div class="col m7 push-m5 s12">
-							<div class="about_wrap_descr">
-								<p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в формировании новых предложений.</p>
-								<div class="about_wrap_descr_items">
-									<div class="about_wrap_descr_items_item-wrap">
-										<div class="about_wrap_descr_items_item-wrap_item">
-											<img src="img/exit-1.jpg" alt="" class="about_wrap_descr_items_item-wrap_item_img col s4">
-											<img src="img/exit-1.jpg" alt="" class="about_wrap_descr_items_item-wrap_item_img col s4">
-											<img src="img/exit-1.jpg" alt="" class="about_wrap_descr_items_item-wrap_item_img col s4">
+					<div class="header_title_type">
+						<span><i></i>выезд специалиста за 30 минут - бесплатно!*</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="header_title_info">
+						<span>Оставьте заявку и получите <span>ПРОФЕССИОНАЛЬНУЮ чистку компьютера БЕСПЛАТНО</span></span>
+						<em>+ консультацию специалиста по использованию компьютера</em>
+						<i></i>
+					</div>
+				</div>
+				<div class="row">
+					<div class="header_title_form">
+						<form action="#" method="POST">
+							<input type="text" placeholder="ВАШЕ ИМЯ">
+							<input type="text" placeholder="ВАШЕ НОМЕР ТЕЛЕФОНА*">
+							<button>ВЫЗВАТЬ МАСТЕРА</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<section id="items">
+	<div class="items">
+		<div class="container">
+			<div class="row">
+				<h2 class="person_title">ремонт на дому любой сложности <strong>за 2 часа</strong></h2>
+			</div>
+			<div class="row">
+				<div class="items_wrap-items">
+					<div class="items_wrap-items_item">
+						<img src="img/item-1.png" alt="item">
+						<div class="items_wrap-items_item_info">
+							<span>Ремонт</span>
+							<br>
+							<span>Ноутбуков</span>
+						</div>
+						<div class="items_wrap-items_item_price-wrap">
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Замена матрицы 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Перегрев 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Чистка от пыли 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Установка/переустановка Windows  
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Настройка программ
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Исправление зависания
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Чистка от вирусов 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Диагностика ноутбука  
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="items_wrap-items_item">
+						<img src="img/item-2.png" alt="item">
+						<div class="items_wrap-items_item_info">
+							<span>Ремонт</span>
+							<br>
+							<span>Компьютеров</span>
+						</div>
+						<div class="items_wrap-items_item_price-wrap">
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Замена матрицы 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Перегрев 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Чистка от пыли 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Установка/переустановка Windows  
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Настройка программ
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Исправление зависания
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Чистка от вирусов 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Диагностика ноутбука  
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="items_wrap-items_item">
+						<img src="img/item-3.png" alt="item">
+						<div class="items_wrap-items_item_info">
+							<span>Ремонт</span>
+							<br>
+							<span>Моноблоков</span>
+						</div>
+						<div class="items_wrap-items_item_price-wrap">
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Замена матрицы 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Перегрев 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Чистка от пыли 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Установка/переустановка Windows  
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Настройка программ
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Исправление зависания
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Чистка от вирусов 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Диагностика ноутбука  
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="items_wrap-items_item">
+						<img src="img/item-4.png" alt="item">
+						<div class="items_wrap-items_item_info">
+							<span>Восстановление</span>
+							<br>
+							<span>Данных</span>
+						</div>
+						<div class="items_wrap-items_item_price-wrap">
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Замена матрицы 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Перегрев 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Чистка от пыли 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Установка/переустановка Windows  
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Настройка программ
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Исправление зависания
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Чистка от вирусов 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Диагностика ноутбука  
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="items_wrap-items_item">
+						<img src="img/item-5.png" alt="item">
+						<div class="items_wrap-items_item_info">
+							<span>Настройка</span>
+							<br>
+							<span>Windows</span>
+						</div>
+						<div class="items_wrap-items_item_price-wrap">
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Замена матрицы 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Перегрев 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Чистка от пыли 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Установка/переустановка Windows  
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Настройка программ
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Исправление зависания
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Чистка от вирусов 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Диагностика ноутбука  
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="items_wrap-items_item">
+						<img src="img/item-9.png" alt="item">
+						<div class="items_wrap-items_item_info">
+							<span>Настройка</span>
+							<br>
+							<span>Интернета</span>
+						</div>
+						<div class="items_wrap-items_item_price-wrap">
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Замена матрицы 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Перегрев 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Чистка от пыли 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Установка/переустановка Windows  
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Настройка программ
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Исправление зависания
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Чистка от вирусов 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Диагностика ноутбука  
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="items_wrap-items_item">
+						<img src="img/item-7.png" alt="item">
+						<div class="items_wrap-items_item_info">
+							<span>Антивирусная</span>
+							<br>
+							<span>Защита</span>
+						</div>
+						<div class="items_wrap-items_item_price-wrap">
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Замена матрицы 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Перегрев 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Чистка от пыли 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Установка/переустановка Windows  
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Настройка программ
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Исправление зависания
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Чистка от вирусов 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Диагностика ноутбука  
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="items_wrap-items_item">
+						<img src="img/item-8.png" alt="item">
+						<div class="items_wrap-items_item_info">
+							<span>Установка</span>
+							<br>
+							<span>Программ</span>
+						</div>
+						<div class="items_wrap-items_item_price-wrap">
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Замена матрицы 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Перегрев 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Чистка от пыли 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Установка/переустановка Windows  
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Настройка программ
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Исправление зависания
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Чистка от вирусов 
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+							<a href="#" class="items_wrap-items_item_price-wrap_price ">
+								<div class="items_wrap-items_item_price-wrap_price_name-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_name-wrap_name">
+										Диагностика ноутбука  
+									</span>
+								</div>
+								<div class="items_wrap-items_item_price-wrap_price_num-wrap ">
+									<span class="items_wrap-items_item_price-wrap_price_num-wrap_num">
+										от 500 руб.
+									</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="items_type">
+					<strong><i></i>гарантия до 3 лет на все виды услуг</strong>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="problem">
+	<div class="problem">
+		<div class="container">
+			<div class="row">
+				<div class="problem_wrap-people">
+					<div class="problem_wrap-people_people">
+						<img src="img/man-2.png" alt="man-2">
+					</div>
+				</div>
+				<div class="problem_form-wrap">
+					<div class="problem_form-wrap_descr">
+						<div class="problem_form-wrap_descr_title">
+							<p><strong> иная проблема?</strong>Оставьте заявку на консультацию!</p>
+						</div>
+						<div class="problem_form-wrap_descr_form">
+							<form action="#" method="POST">
+								<input type="text" placeholder="ВАШ НОМЕР ТЕЛЕФОНА*">
+								<button>получите бесплатную консультацию!</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="person" id="person">
+	<div class="container">
+		<div class="row">
+			<h2 class="person_title">Наши <strong>Специалисты</strong></h2>
+			<div id="person-slider">
+				<div id="person-slide">
+					<div>
+						<div class="person_wrap">
+							<div class="col l3  s12">
+								<div class="person_wrap_avatar ">
+									<div class="person_wrap_avatar_img col l12  s6 ">
+										<img src="img/man.png" alt="men">
+									</div>
+									<div class="person_wrap_counter-wrap col l12 s6">
+										<div class="person_wrap_counter-wrap_counter">
+											<span>Отремонтировал</span>
+											<div class="person_wrap_counter-wrap_counter_number">9</div>
+											<div class="person_wrap_counter-wrap_counter_number">9</div>
+											<div class="person_wrap_counter-wrap_counter_number">9</div>
+											<div class="person_wrap_counter-wrap_counter_number">9</div>
+											<span>компьютеров</span>
 										</div>
 									</div>
 								</div>
 							</div>
+							<div class="col l9 s12">
+								<div class="person_wrap_form-wrap">
+									<div class="person_wrap_form-wrap_title">
+										Владимир
+									</div>
+									<div class="person_wrap_form-wrap_descr">
+										<p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в формировании новых предложений. Задача организации, в особенности же консультация с широким активом требуют от нас анализа направлений прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании модели развития.</p> 
+									</div>
+									<div class="person_wrap_form-wrap_form">
+										<form action="#" method="POST">
+												<input type="text"  placeholder="ВАШЕ ИМЯ">
+												<input type="text" placeholder="ВАШЕ НОМЕР ТЕЛЕФОНА*">
+												<button>вызвать владимира</button>
+										</form>
+									</div>
+								</div>
+								
+							</div>
 						</div>
-						<div class="col m5 pull-m7 s12">
+					</div>
+					<div>
+						<div class="person_wrap">
+							<div class="col l3  s12">
+								<div class="person_wrap_avatar ">
+									<div class="person_wrap_avatar_img col l12  s6 ">
+										<img src="img/man.png" alt="men">
+									</div>
+									<div class="person_wrap_counter-wrap col l12 s6">
+										<div class="person_wrap_counter-wrap_counter">
+											<span>Отремонтировал</span>
+											<div class="person_wrap_counter-wrap_counter_number">9</div>
+											<div class="person_wrap_counter-wrap_counter_number">9</div>
+											<div class="person_wrap_counter-wrap_counter_number">9</div>
+											<div class="person_wrap_counter-wrap_counter_number">9</div>
+											<span>компьютеров</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col l9 s12">
+								<div class="person_wrap_form-wrap">
+									<div class="person_wrap_form-wrap_title">
+										Владимир
+									</div>
+									<div class="person_wrap_form-wrap_descr">
+										<p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в формировании новых предложений. Задача организации, в особенности же консультация с широким активом требуют от нас анализа направлений прогрессивного развития. Идейные сообрания высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании модели развития.</p> 
+									</div>
+									<div class="person_wrap_form-wrap_form">
+										<form action="#" method="POST">
+												<input type="text"  placeholder="ВАШЕ ИМЯ">
+												<input type="text" placeholder="ВАШЕ НОМЕР ТЕЛЕФОНА*">
+												<button>вызвать владимира</button>
+										</form>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="person_wrap">
+							<div class="col l3  s12">
+								<div class="person_wrap_avatar ">
+									<div class="person_wrap_avatar_img col l12  s6 ">
+										<img src="img/man.png" alt="men">
+									</div>
+									<div class="person_wrap_counter-wrap col l12 s6">
+										<div class="person_wrap_counter-wrap_counter">
+											<span>Отремонтировал</span>
+											<div class="person_wrap_counter-wrap_counter_number">9</div>
+											<div class="person_wrap_counter-wrap_counter_number">9</div>
+											<div class="person_wrap_counter-wrap_counter_number">9</div>
+											<div class="person_wrap_counter-wrap_counter_number">9</div>
+											<span>компьютеров</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col l9 s12">
+								<div class="person_wrap_form-wrap">
+									<div class="person_wrap_form-wrap_title">
+										Владимир
+									</div>
+									<div class="person_wrap_form-wrap_descr">
+										<p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в формировании новых предложений. Задача организации, в особенности же консультация с широким активом требуют от нас анализа направлений прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании модели развития.</p> 
+									</div>
+									<div class="person_wrap_form-wrap_form">
+										<form action="#" method="POST">
+												<input type="text"  placeholder="ВАШЕ ИМЯ">
+												<input type="text" placeholder="ВАШЕ НОМЕР ТЕЛЕФОНА*">
+												<button>вызвать владимира</button>
+										</form>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+<section id="recall">
+	<div class="recal">
+		<div class="container">
+			<div class="row">
+				<h2 class="recall_title"><strong>настоящие отзывы </strong>наших клиентов</h2>
+				<div id="recal-slider">
+					<div data-add="popup-doc">
+						<a href="img/doc.jpg" >
+							<img src="img/doc.jpg" alt="doc" class="recal-slide">
+						</a>
+					</div>
+					<div data-add="popup-doc">
+						<a href="img/doc.jpg" >
+							<img src="img/doc.jpg" alt="doc" class="recal-slide">
+						</a>
+					</div>
+					<div data-add="popup-doc">
+						<a href="img/doc.jpg" >
+							<img src="img/doc.jpg" alt="doc" class="recal-slide">
+						</a>
+					</div>
+					<div data-add="popup-doc">
+						<a href="img/doc.jpg" >
+							<img src="img/doc.jpg" alt="doc" class="recal-slide">
+						</a>
+					</div>
+					<div data-add="popup-doc">
+						<a href="img/doc.jpg" >
+							<img src="img/doc.jpg" alt="doc" class="recal-slide">
+						</a>
+					</div>
+					<div data-add="popup-doc">
+						<a href="img/doc.jpg" >
+							<img src="img/doc.jpg" alt="doc" class="recal-slide">
+						</a>
+					</div>
+					<div data-add="popup-doc">
+						<a href="img/doc.jpg" >
+							<img src="img/doc.jpg" alt="doc" class="recal-slide">
+						</a>
+					</div>
+					<div data-add="popup-doc">
+						<a href="img/doc.jpg" >
+							<img src="img/doc.jpg" alt="doc" class="recal-slide">
+						</a>
+					</div>
+					<div data-add="popup-doc">
+						<a href="img/doc.jpg" >
+							<img src="img/doc.jpg" alt="doc" class="recal-slide">
+						</a>
+					</div>
+					<div data-add="popup-doc">
+						<a href="img/doc.jpg" >
+							<img src="img/doc.jpg" alt="doc" class="recal-slide">
+						</a>
+					</div>
+					<div data-add="popup-doc">
+						<a href="img/doc.jpg" >
+							<img src="img/doc.jpg" alt="doc" class="recal-slide">
+						</a>
+					</div>
+					<div data-add="popup-doc">
+						<a href="img/doc.jpg" >
+							<img src="img/doc.jpg" alt="doc" class="recal-slide">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="person_page-wrap">
+			<div class="person_page-wrap_line"></div>
+			<div class="wrap-number-page">
+			</div>
+		</div>
+	</div>
+</section>
+<section class="about" id="about">
+	<div class="container">
+		<div class="row">
+			<h2 class="about_title">Вкратце о нашем <strong>сервисном центре</strong></h2>
+			<div class="about_wrap">
+				<div class="col s12">
+					<div class="about_wrap_descr">
+						<p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в формировании новых предложений.</p>
+						<p>Задача организации, в особенности же консультация с широким активом требуют от нас анализа направлений прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании модели развития. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же консультация с широким активом требуют от нас анализа направлений прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании модели развития. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.</p>
+					</div>
+				</div>
+				<div class="about_wrap_descr_items col m12 s12 l7 push-l5">
+					<div class="about_wrap_descr_items_item-wrap">
+						<div class="about_wrap_descr_items_item-wrap_item">
+							<a href="img/door-1.jpg">
+								<img src="img/door-1.jpg" alt="" class="about_wrap_descr_items_item-wrap_item_img col s4">
+							</a>
+							<a href="img/door-2.jpg">
+								<img src="img/door-2.jpg" alt="" class="about_wrap_descr_items_item-wrap_item_img col s4">
+							</a>
+							<a href="img/door-3.jpg">
+								<img src="img/door-3.jpg" alt="" class="about_wrap_descr_items_item-wrap_item_img col s4">
+							</a>
+								</div>
+							</div>
+						</div>
+						<div class="col l5 pull-l7 m12 s12">
 							<div class="about_wrap_map">
-								<img src="img/map.jpg" alt="#" class="about_wrap_map_item">
+								<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=cPkHLbe6VrzEjUBJP-OXKcvKnJyRcWPk&width=100%&height=400&lang=ru_RU&sourceType=constructor"></script>
 							</div>
 						</div>
 					</div>
@@ -1286,9 +1313,9 @@
 								</div>
 								<div class="question_form-wrap_descr_form">
 									<form action="#" method="POST">
-										<input type="text">
-										<input type="text">
-										<button>вызвать владимира</button>
+										<input type="text" placeholder="ВАШЕ ИМЯ">
+										<input type="text" placeholder="ВАШ НОМЕР ТЕЛЕФОНА*">
+										<button>получить консультацию</button>
 									</form>
 								</div>
 							</div>
@@ -1328,7 +1355,6 @@
 			</div>
 		</footer>
 	</div>
-
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 </body>

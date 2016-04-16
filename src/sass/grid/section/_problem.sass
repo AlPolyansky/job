@@ -1,4 +1,5 @@
 #problem
+	//display: none
 	.problem
 		margin-top: 100px
 		background-image: url("../img/bg-arrow.png")
@@ -12,16 +13,15 @@
 			.row
 				margin-bottom: 0
 		&_wrap-people
+			//display: none
 			&_people
 				position: absolute
-				left: -20px
-				//top: -62px
+				left: -60px
 				bottom: 0
-				transform: translateX(-20px)
-				img
-					//width: 100%
+				@media only screen and (max-width : $extraSmallDevicesMax)
+					left: -80px
 		&_form-wrap
-			padding-left: 10%
+			padding-left: 15%
 			margin-top: 140px
 			position: relative
 			z-index: 100
@@ -30,12 +30,16 @@
 			&_descr
 				text-transform: uppercase
 				font-size: 30px
-				padding-left: 20%
+				padding-left: 21%
+				@media only screen and (max-width : 601px)
+					padding-left: 50px
 				&_title
 					p
 						display: inline
 						@media only screen and (max-width : 601px)
 							font-size: 30px
+						@media only screen and (max-width : $extraSmallDevicesMax)
+							font-size: 24px
 					span
 						@media only screen and (max-width : 601px)
 							font-size: 17px
@@ -51,32 +55,46 @@
 						padding-top: 28px
 						font-size: 16px
 						position: relative
-						left: 100px
-						@media only screen and (max-width : 991px)
-							left: 0
+						margin-right: 15px
 						input
 							border: none
 							width: 30%
-							border-radius: 5px
 							height: 40px
 							border: 2px solid $colorBase4
 							text-align: center
 							border-radius: 5px
 							background-color: $colorBase
-							@media only screen and (max-width : 992px)
+							&:focus
+								box-shadow: none
+							@media only screen and (max-width : 924px)
+								width: 320px
+							@media only screen and (max-width : $extraSmallDevicesMax)
 								width: 100%
+								max-width: 320px
+								font-size: 14px
+								&::-webkit-input-placeholder 
+									color: #808080
+								&::-moz-placeholder 
+									color: #808080
+								&:-moz-placeholder
+								   color: #808080
+								&:-ms-input-placeholder
+								   color: #808080
 						button
 							border: none
 							border-radius: 5px
 							height: 40px
 							padding: 10px
-							//width: 100%
 							display: inline-block
 							background-color: $colorTopMenu
 							margin: 0 auto
 							display: inline-block
 							text-transform: uppercase
 							color: $colorBase
-							flot: right
-							@media only screen and (max-width : 992px)
+							-webkit-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+							-moz-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+							box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+							@media only screen and (max-width : $extraSmallDevicesMax)
 								width: 100%
+								max-width: 320px
+								font-size: 14px

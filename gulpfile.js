@@ -73,7 +73,9 @@ gulp.task('scripts', function(){
 	return gulp.src([
 		'src/libs/jquery/dist/jquery.min.js',
 		'src/libs/Materialize/dist/js/materialize.min.js',
-		'src/libs/owl.carousel.2.0.0-beta.2.4/owl.carousel.min.js'//тут пишем пути к js файлам библиотек
+		'src/libs/slick-carousel/slick/slick.js',
+		'src/libs/magnific-popup/dist/jquery.magnific-popup.js',
+		/*'src/libs/owl.carousel.2.0.0-beta.2.4/owl.carousel.min.js'*///тут пишем пути к js файлам библиотек
 	])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
@@ -94,7 +96,10 @@ gulp.task('css-libs', ['sass'], function(){
 	return gulp.src([
 		'src/libs/Materialize/dist/css/materialize.min.css',
 		'src/libs/reset/reset.css',
-		'src/libs/owl.carousel.2.0.0-beta.2.4/assets/owl.carousel.css'
+		'src/libs/slick-carousel/slick/slick.css',
+		'src/libs/slick-carousel/slick/slick-theme.css',
+		'src/libs/magnific-popup/dist/magnific-popup.css',
+		/*'src/libs/owl.carousel.2.0.0-beta.2.4/assets/owl.carousel.css'*/
 		 //тут пишем пути к css файлам библиотек
 	])
 	.pipe(concat('libs.min.css'))

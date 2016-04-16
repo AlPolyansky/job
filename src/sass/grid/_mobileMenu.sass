@@ -1,6 +1,53 @@
-body
-	position: relative
+#mobile-mnu
 	.side-nav
-		z-index: 200000
-	.open
-		transform: none
+		background-color: #333
+		text-align: right
+		z-index: 100000
+		
+		.close-nav
+			display: block
+			padding-top: 40px
+			margin-bottom: 20px
+			&>i
+				background-image: url("../img/close.png")
+				background-size: cover
+				width: 24px
+				height: 24px
+				display: block
+				cursor: pointer
+				position: relative
+
+		li
+			position: relative
+			padding: 0 30px
+			a
+				display: inline-block
+				&>i
+					background-image: url("../img/arrow-m.png")
+					background-size: cover
+					width: 16px
+					height: 16px
+					display: inline-block
+					position: relative
+					right: 20px
+					top: 2px
+					cursor: pointer
+
+				padding: 0
+				font-size: 16px
+				color: $colorBase
+				border-bottom: 1px solid #2e2e2e
+				text-transform: uppercase
+				&:hover
+					background-color: inherit
+			ul
+				display: none
+				li
+					padding: 0
+					a
+						color: #c8c8c8
+						font-size: 14px
+						padding-right: 25px
+			.open
+				display: block
+

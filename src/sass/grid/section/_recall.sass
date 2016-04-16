@@ -8,8 +8,11 @@
 			text-transform: uppercase
 			font-weight: 100
 			margin-bottom: 40px
+			margin-top: 70px
 			@media only screen and (max-width : 601px)
 				font-size: 38px
+			@media only screen and (max-width : $extraSmallDevicesMax)
+				font-size: 30px
 			&:after
 				content: ""
 				display: block
@@ -19,11 +22,6 @@
 				background-color: $colorMain
 			strong
 				font-weight: 900
-		&_doc-wrap
-			//background-color: red
-			&_doc
-				img
-					width: 100%
 
 
 
@@ -68,3 +66,48 @@
 .hidden
 	@media only screen and (max-width : 601px)
 		display: none
+
+#recal-slider
+	text-align: center
+	div
+		outline: none
+	.popup-doc
+		max-width: 109px
+		display: inline-block
+
+	img
+		border: 6px solid #ccc
+		outline: none
+		margin: 0 auto
+		width: 100%
+		max-width: 109px
+		@media only screen and (max-width : $extraSmallDevicesMax)
+			max-width: 80px
+
+.slick-dots
+	display: inline
+	position: relative
+	background-color: $colorBase
+	z-index: 200
+	top: 56px
+	li
+		background-color: $colorBase
+		border: 2px solid $colorBase3
+		color: $colorBase3
+		font-family: $fontMainLight
+		height: 34px
+		width: 33px
+		line-height: 34px
+		vertical-align: middle
+		cursor: pointer
+		position: relative
+		z-index: 900
+		a
+			color: $colorBase3
+	.slick-active
+		border: 2px solid $colorMain
+		a
+			color: $colorMain
+			font-weight: 900
+
+

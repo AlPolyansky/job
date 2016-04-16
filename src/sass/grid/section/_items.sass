@@ -1,9 +1,11 @@
 #items
 	.items
+		@media only screen and (max-width : 645px) 
+			margin-right: 15px
+			margin-left: 15px
 		h2
 			margin-top: 86px
 			font-family: $fontMainLight
-			padding: 0
 			strong
 				display: block
 			@media only screen and (max-width : 601px)
@@ -11,10 +13,11 @@
 				margin-top: 45px
 				strong
 					display: inline
+			@media only screen and (max-width : $extraSmallDevicesMax)
+				font-size: 30px
 		&_wrap-items
 			margin-top: 61px
 			font-size: 0
-			text-align: justify
 			text-align: center
 			&_item
 				font-size: 16px
@@ -27,18 +30,20 @@
 				margin-right: 45px
 				margin-bottom: 100px
 				position: relative
-				&:last-child
-					margin-right: 0
-				@media only screen and (min-width : 991px)
+				@media only screen and (min-width : 990px)
 					&:nth-child(3n+3)
 						margin-right: 0
-				@media only screen and (max-width : 990px)
+					&:last-child
+						margin-right: 0
+				@media only screen and (max-width : 989px) and (min-width : 646px)
 					&:nth-child(2n+2)
 						margin-right: 0
-				@media only screen and (max-width : 645px)
-					&
-						margin-right: 0
+				@media only screen and (max-width : 645px) 
+						display: block
+						margin-right: auto
+						margin-left: auto
 						max-width: 399px
+
 				img
 				   position: relative
 				   top: -60px
@@ -83,14 +88,9 @@
 						background-image: url("../img/dot.png")
 						background-repeat: repeat-X
 						width: 100%
-						background-position: center bottom
+						background-position: center 80%
 						color: $colorBase2
 						margin: 10px 0
-						&:last-child
-							&>div
-								background-color: inherit
-								&>span
-									background-color: inherit
 						&:hover
 							color: $colorTopMenu
 							
@@ -125,6 +125,9 @@
 			height: 65px
 			margin: 0 auto
 			text-align: center
+			margin-bottom: 50px
+			@media only screen and (max-width : 645px)
+				max-width: 399px
 			&>strong
 				font-size: 18px
 				color: $colorBase
@@ -136,6 +139,12 @@
 				display: inline-block
 				@media only screen and (max-width : 645px)
 					font-size: 16px
+					left: 15px
+				@media only screen and (max-width : 380px)
+					font-size: 14px
+				@media only screen and (max-width : 340px)
+					font-size: 13px
+
 				&>i
 					width: 35px
 					display: block
@@ -143,13 +152,16 @@
 					background-image: url("../img/item-ico.png")
 					position: absolute
 					top: 8px
-					left: -50px
+					left: -55px
 					@media only screen and (max-width : 645px)
 						left: -40px
+					@media only screen and (max-width : 360px)
+						width: 30px
+						height: 35px
+						background-size: cover
+						top: 12px
+						left: -35px
 
-
-			@media only screen and (max-width : 645px)
-				max-width: 399px
 
 
 
