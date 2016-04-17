@@ -1,0 +1,86 @@
+.item
+	font-size: 16px
+	height: 374px
+	display: inline-block
+	vertical-align: top
+	border: 6px solid $colorMain
+	width: 100%
+	max-width: 300px
+	margin-right: 45px
+	margin-bottom: 100px
+	position: relative
+	@media only screen and (min-width : 990px)
+		&:nth-child(3n+3)
+			margin-right: 0
+		&:last-child
+			margin-right: 0
+	@media only screen and (max-width : 989px) and (min-width : 646px)
+		&:nth-child(2n+2)
+			margin-right: 0
+	@media only screen and (max-width : 645px) 
+			display: block
+			margin-right: auto
+			margin-left: auto
+			max-width: 399px
+
+	img
+	   position: relative
+	   top: -60px
+	   max-width: 300px
+	   left: 0
+	   float: left
+	   width: 100%
+	   @media only screen and (max-width : 645px)
+	   	float: none
+	&_info
+		text-align: left
+		display: inline-block
+		position: absolute
+		right: 14px
+		top: 20px
+		@media only screen and (max-width : 645px)
+			right: 60px
+		&>span
+			background-color: $colorTopMenu
+			position: relative
+			z-index: 100
+			padding: 5px
+			text-transform: uppercase
+			font-family: $fontMainLight
+			color: $colorBase
+			display: inline-block
+			float: left
+	&_price-wrap
+		font-family: $fontMainLight
+		font-weight: 400
+		position: relative
+		display: inline-block
+		margin-bottom: 5px
+		width: 100%
+		&_price
+			display: block
+			background-image: url("../img/dot.png")
+			background-repeat: repeat-X
+			width: 100%
+			background-position: center 98%
+			color: $colorBase2
+			margin: 10px 0
+			overflow: hidden
+			position: relative
+			&:hover
+				color: $colorTopMenu
+				span
+					text-decoration: underline
+			&_name-wrap
+				text-align: left
+				max-width: 70%
+				&_name
+					display: inline
+					padding-bottom: 12px
+					font-size: 13px
+			&_num
+				display: inline
+				font-size: 13px
+				position: absolute
+				right: 0
+				bottom: 0

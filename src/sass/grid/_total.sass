@@ -13,3 +13,128 @@ body
 .mfp-iframe-holder .mfp-close, .mfp-image-holder .mfp-close
 	font-size: 50px
 	right: -15px
+
+.total-type
+	width: 675px
+	height: 76px
+	background-image: url("../img/type.png")
+	background-repeat: no-repeat
+	margin: 0 auto
+	background-size: contain
+	background-position: center
+	margin-top: 48px
+	margin-bottom: 57px
+	text-align: center
+	font-weight: 900
+	@media only screen and (max-width : #{$largeDevisesMin})
+		background-image: url("../img/mini-type.png")
+		width: 471px
+		background-size: contain
+		width: 100%
+		max-width: 460px
+		margin-top: 25
+		margin-bottom: 37px
+	@media only screen and (max-width : $extraSmallDevicesMax)
+		height: 80px
+		margin-bottom: 10px
+		margin-top: 10px
+	&_text
+		font-size: 20px
+		color: $colorBase2
+		position: relative
+		display: inline-block
+		text-transform: uppercase
+		top: 40%
+		transform: translateY(-50%)
+		@media only screen and (max-width : #{$largeDevisesMin})
+			font-size: 15px
+		@media only screen and (max-width : 460px)
+			font-size: 10.5px
+			top: 44%
+		&_ico
+			width: 20px
+			height: 27px
+			display: inline-block
+			background-image: url("../img/watch.png")
+			position: relative
+			top: 4px
+			right: 10px
+			@media only screen and (max-width : #{$largeDevisesMin})
+				width: 20px
+				height: 24px
+				background-size: contain
+				background-repeat: no-repeat
+				top: 5px
+				right: 5px
+			@media only screen and (max-width : 460px)
+				width: 17px
+				height: 17px
+				top: 3px
+				right: 0
+.call-type
+	height: 108px
+	background-image: url("../img/img-pages/pages-call-type.png")
+	background-size: 
+	width: 100%
+	//padding-left: 4px
+	padding-top: 27px
+	overflow: hidden
+	&_title
+		&_ico
+			width: 47px
+			position: relative
+			right: -50px
+			display: block
+			height: 54px
+			float: left
+			margin-right: 15px
+			background-image: url("../img/img-pages/phone.png")
+		&_text
+			text-transform: uppercase
+			color: #363d4b
+			font-size: 26px
+			display: inline
+			position: relative
+			right: -50px
+			&_bold
+				display: block
+				font-weight: 900
+#form
+	position: relative
+	right: 10px
+	.form_input
+		display: inline-block
+		width: 248px
+		text-align: center
+		border-radius: 3px
+		background-color: $colorBase
+		height: 44px
+		border: none
+		font-size: 16px
+		margin-right: 16px
+		&::-webkit-input-placeholder 
+			color: #808080
+		&::-moz-placeholder 
+			color: #808080
+		&:-moz-placeholder
+		   color: #808080
+		&:-ms-input-placeholder
+		   color: #808080
+		&:focus
+			box-shadow: none!important
+	.form_button
+		display: inline-block
+		font-size: 16px
+		position: relative
+		height: 47px
+		background-color: $colorTopMenu
+		border: none
+		color: $colorBase
+		text-transform: uppercase
+		border-radius: 3px
+		font-weight: 900
+		-webkit-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+		-moz-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+		box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.35)
+		width: 100%
+		max-width: 258px

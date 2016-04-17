@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+</head>
+<body>
+	<div id="modal" class="modal">
+		<div class="modal-content">
+			<div class="modal-close"></div>
+			<h2>Выберите город</h2>
+			<div class="modal-city-wrap">
+				<div class="modal-city-wrap_modal-city">
+					<div class="container">
+						<div class="row">
+							<div class="col s6">
+								<a href="#">Москва</a>
+								<a href="#">Санкт-Петербург</a>
+								<a href="#">Ростов-на-Дону</a>
+								<a href="#">Краснодар</a>
+							</div>
+							<div class="col s6">
+								<a href="#">Москва</a>
+								<a href="#">Санкт-Петербург</a>
+								<a href="#">Ростов-на-Дону</a>
+								<a href="#">Краснодар</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="mobile-mnu">
+		<ul id="slide-out" class="side-nav">
+			<li class="close-nav"><i></i></li>
+			<li><a href="#1">ремонт ноутбуков</a></li>
+			<li><a href="#2">ремонт компьютеров</a></li>
+			<li>
+				<a href="#3"><i></i>ремонт моноблоков</a>
+				<ul>
+					<li><a href="#3-1">Перегрев</a></li>
+					<li><a href="#3-2">Чистка пыли</a></li>
+					<li><a href="#3-3">Установка/Переустаyновка</a></li>
+					<li><a href="#3-4">Настройка программ</a></li>
+					<li><a href="#3-5">Зависает</a></li>
+					<li><a href="#3-6">Вирусы</a></li>
+				</ul>
+			</li>
+			<li><a href="#4">восстановление данных</a></li>
+			<li><a href="#5">настройка windows</a></li>
+			<li><a href="#6">настройка интернета</a></li>
+			<li><a href="#7">антивирусная защита</a></li>
+			<li><a href="#8">установка программ</a></li>
+		</ul>
+	</div>
+	<div id="wrapper">
+		<header id="header" class="page-header">
+			<div class="header_top_menu">
+				<div class="container">
+					<div class="row">
+						<div class="header_top_menu_wrap">
+							<ul>
+								<li><a href="#">ремонт<br>ноутбуков</a></li>
+								<li><a href="#">ремонт<br>компьютеров</a></li>
+								<li>
+									<a href="#"><span>ремонт<br>моноблоков</span></a>
+									<ul>
+										<li><a href="#">Перегрев</a></li>
+										<li><a href="#">Чистка пыли</a></li>
+										<li><a href="#">Установк/Переустановка</a></li>
+										<li><a href="#">Настройка программ</a></li>
+										<li><a href="#">Зависает</a></li>
+										<li><a href="#">Вирусы</a></li>
+									</ul>
+								</li>
+								<li><a href="#">восстановление<br>данных</a></li>
+								<li><a href="#">настройка<br>windows</a></li>
+								<li><a href="#">настройка<br>интернета</a></li>
+								<li><a href="#">антивирусная<br>защита</a></li>
+								<li><a href="#">установка<br>программ</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="header_dop-info page-header_dop-info">
+					<div class="container">
+						<div class="row">
+							<div class="col l4 m4 s5">
+								<a href="index.html" class="header_dop-info_logo">
+									<img src="img/logo.png" alt="#">
+								</a>
+							</div>
+							<div class="col l4 m4 s7 push-l4">
+								<div class="header_dop-info_phone">
+									<div class="header_dop-info_phone-wrap">
+										<address>8 (909) 200-20-20</address>
+										<p>c 8:00 до 24:00<a href="#">Заказать завонок</a></p>
+									</div>
+								</div>
+							</div>
+							<a href="#" data-activates="slide-out" class="button-collapse header_dop-info_mobile-menu">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+							<div class="col l4 pull-l4 push-4 m12 s12">
+								<div class="header_dop-info_help">
+									<p class="header_dop-info_help_title">компьтерная помощь на дому</p>
+									<div>в городе <div id="city">
+										Санкт-Петербург
+										<div class="toast-content">
+
+											<div class="toast-wrap">
+												<p>Ваш город Санкт-Петербург?</p>
+												<button class="yes">Да</button>
+												<a href="#modal" class="sellect-city modal-trigger">Выбрать другой город?</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								,<span> Мучной переулок, д.3 Садовая</span>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+		</header>
+	<section id="page-content">
+		<div class="container page-content">
+			<div class="row">
+				<div class="page-content_title-wrap">
+					<h1 class="page-content_title-wrap_title">Установка/переустановка Windows</h1>
+					<address class="page-content_title-wrap_address">В Санкт-Петербурге</address>
+					<div class="total-type">
+						<span class="total-type_text"><i class="total-type_text_ico"></i>выезд мастера за 30 минут - бесплатно!*</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="call-type">
+					<div class="call-type_title col s5">
+						<i class="call-type_title_ico"></i>
+						<h2 class="call-type_title_text">оставьте заявку<strong class="call-type_title_text_bold"> на выезд мастера:</strong></h2>
+					</div>
+					<div class="call-type_form col s7">
+						<form action="#" id="form" method="POST">
+							<input class="form_input" call-formtype="text" placeholder="ВАШ НОМЕР ТЕЛЕФОНА*">
+							<button class="form_button">вызвать мастера</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="page-content_info">
+					<div class="col s8">
+						<p class="page-content_info_text">
+							Большое SEO описание. Заказывая установку Windows в компании Кит-Сервис, вы можете рассчитывать на качественно оказанную услугу, в результате которой все ваши данные останутся нетронутыми, а все настройки будут соответствовать вашим предпочтениям. Заказывая установку Windows в компании Кит-Сервис, вы можете рассчитывать на качественно оказанную услугу, в результате которой все ваши данные останутся нетронутыми, а все настройки будут соответствовать вашим предпочтениям. Заказывая установку Windows в компании Кит-Сервис, вы можете рассчитывать на качественно оказанную услугу, в результате которой все ваши данные останутся нетронутыми, а все настройки будут соответствовать вашим предпочтениям. 
+						</p>
+						<p class="page-content_info_text">
+							Большое SEO описание. Заказывая установку Windows в компании Кит-Сервис, вы можете рассчитывать на качественно оказанную услугу, в результате которой все ваши данные останутся нетронутыми, а все настройки будут соответствовать вашим предпочтениям. Заказывая установку Windows в компании Кит-Сервис, вы можете рассчитывать на качественно оказанную услугу, в результате которой все ваши данные останутся нетронутыми, а все настройки будут соответствовать вашим предпочтениям. Заказывая установку Windows в компании Кит-Сервис, вы можете рассчитывать на качественно оказанную услугу, в результате которой все ваши данные останутся нетронутыми, а все настройки будут соответствовать вашим предпочтениям. 
+						</p>
+						<img src="img/img-pages/windows.png" alt="windows" class="page-content_info_img">
+					</div>
+					<div class="col s4">
+						<div class="page-content_info_price">
+							<span class="page-content_info_price_text">от <strong class="page-content_info_price_text_num">5 999</strong> руб.</span>
+						</div>
+						<img src="img/img-pages/liberty.jpg" alt="liberty" class="page-content_info_liberty">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="page-item">
+		<div class="container">
+			<div class="row">
+				<h2 class="person_title"><strong>Дополнительные услуги</strong><br>c установкой windows</h2>
+			</div>
+			<div class="row">
+				<div class="item-wrap">
+					<div class="item">
+						<div class="item_price-wrap">
+							<a href="#" class="item_price-wrap_price ">
+								<div class="item_price-wrap_price_name-wrap">
+									<span class="item_price-wrap_price_name-wrap_name">Установка антивируса</span>
+								</div>
+								<span class="item_price-wrap_price_num">от 500 руб.</span>
+							</a>
+							<a href="#" class="item_price-wrap_price ">
+								<div class="item_price-wrap_price_name-wrap">
+									<span class="item_price-wrap_price_name-wrap_name">Перегрев</span>
+								</div>
+								<span class="item_price-wrap_price_num">от 500 руб.</span>
+							</a>
+							<a href="#" class="item_price-wrap_price ">
+								<div class="item_price-wrap_price_name-wrap">
+									<span class="item_price-wrap_price_name-wrap_name">Чистка от пыли</span>
+								</div>
+								<span class="item_price-wrap_price_num">от 500 руб.</span>
+							</a>
+							<a href="#" class="item_price-wrap_price ">
+								<div class="item_price-wrap_price_name-wrap">
+									<span class="item_price-wrap_price_name-wrap_name">Установка/переустановка Windows</span>
+								</div>
+								<span class="item_price-wrap_price_num">от 500 руб.</span>
+							</a>
+							<a href="#" class="item_price-wrap_price ">
+								<div class="item_price-wrap_price_name-wrap">
+									<span class="item_price-wrap_price_name-wrap_name">Настройка программ</span>
+								</div>
+								<span class="item_price-wrap_price_num">от 500 руб.</span>
+							</a>
+							<a href="#" class="item_price-wrap_price ">
+								<div class="item_price-wrap_price_name-wrap">
+									<span class="item_price-wrap_price_name-wrap_name">Исправление зависания</span>
+								</div>
+								<span class="item_price-wrap_price_num">от 500 руб.</span>
+							</a>
+							<a href="#" class="item_price-wrap_price ">
+								<div class="item_price-wrap_price_name-wrap">
+									<span class="item_price-wrap_price_name-wrap_name">Чистка от вирусов</span>
+								</div>
+								<span class="item_price-wrap_price_num">от 500 руб.</span>
+							</a>
+							<a href="#" class="item_price-wrap_price ">
+								<div class="item_price-wrap_price_name-wrap">
+									<span class="item_price-wrap_price_name-wrap_name">Диагностика ноутбука</span>
+								</div>
+								<span class="item_price-wrap_price_num">от 500 руб.</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="problem">
+		<div class="problem page-problem">
+			<div class="container">
+				<div class="row">
+					<div class="problem_wrap-people">
+						<div class="problem_wrap-people_people">
+							<img src="img/img-pages/page-man.png" alt="page-man">
+						</div>
+					</div>
+					<div class="problem_form-wrap">
+						<div class="problem_form-wrap_descr">
+							<div class="problem_form-wrap_descr_title">
+								<p><strong> иная проблема?</strong>Оставьте заявку на консультацию!</p>
+							</div>
+							<div class="problem_form-wrap_descr_form">
+								<form action="#" method="POST">
+									<input type="text" placeholder="ВАШ НОМЕР ТЕЛЕФОНА*">
+									<button>получите бесплатную консультацию!</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="person" id="person">
+		<div class="container">
+			<div class="row">
+				<h2 class="person_title">Наши <strong>Специалисты</strong></h2>
+				<div id="person-slider">
+					<div id="person-slide">
+						<div>
+							<div class="person_wrap">
+								<div class="col l3  s12">
+									<div class="person_wrap_avatar ">
+										<div class="person_wrap_avatar_img col l12  s4 ">
+											<img src="img/man.png" alt="men">
+										</div>
+										<div class="person_wrap_counter-wrap col l12 s6">
+											<div class="person_wrap_counter-wrap_counter">
+												<span>Отремонтировал</span>
+												<div class="person_wrap_counter-wrap_counter_number">9</div>
+												<div class="person_wrap_counter-wrap_counter_number">9</div>
+												<div class="person_wrap_counter-wrap_counter_number">9</div>
+												<div class="person_wrap_counter-wrap_counter_number">9</div>
+												<span>компьютеров</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col l9 s12">
+									<div class="person_wrap_form-wrap">
+										<div class="person_wrap_form-wrap_title">
+											Владимир
+										</div>
+										<div class="person_wrap_form-wrap_descr">
+											<p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в формировании новых предложений. Задача организации, в особенности же консультация с широким активом требуют от нас анализа направлений прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании модели развития.</p> 
+										</div>
+										<div class="person_wrap_form-wrap_form">
+											<form action="#" method="POST">
+												<input type="text"  placeholder="ВАШЕ ИМЯ">
+												<input type="text" placeholder="ВАШЕ НОМЕР ТЕЛЕФОНА*">
+												<button>вызвать владимира</button>
+											</form>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="person_wrap">
+								<div class="col l3  s12">
+									<div class="person_wrap_avatar ">
+										<div class="person_wrap_avatar_img col l12  s6 ">
+											<img src="img/man.png" alt="men">
+										</div>
+										<div class="person_wrap_counter-wrap col l12 s6">
+											<div class="person_wrap_counter-wrap_counter">
+												<span>Отремонтировал</span>
+												<div class="person_wrap_counter-wrap_counter_number">9</div>
+												<div class="person_wrap_counter-wrap_counter_number">9</div>
+												<div class="person_wrap_counter-wrap_counter_number">9</div>
+												<div class="person_wrap_counter-wrap_counter_number">9</div>
+												<span>компьютеров</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col l9 s12">
+									<div class="person_wrap_form-wrap">
+										<div class="person_wrap_form-wrap_title">
+											Владимир
+										</div>
+										<div class="person_wrap_form-wrap_descr">
+											<p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в формировании новых предложений. Задача организации, в особенности же консультация с широким активом требуют от нас анализа направлений прогрессивного развития. Идейные сообрания высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании модели развития.</p> 
+										</div>
+										<div class="person_wrap_form-wrap_form">
+											<form action="#" method="POST">
+												<input type="text"  placeholder="ВАШЕ ИМЯ">
+												<input type="text" placeholder="ВАШЕ НОМЕР ТЕЛЕФОНА*">
+												<button>вызвать владимира</button>
+											</form>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="person_wrap">
+								<div class="col l3  s12">
+									<div class="person_wrap_avatar ">
+										<div class="person_wrap_avatar_img col l12  s6 ">
+											<img src="img/man.png" alt="men">
+										</div>
+										<div class="person_wrap_counter-wrap col l12 s6">
+											<div class="person_wrap_counter-wrap_counter">
+												<span>Отремонтировал</span>
+												<div class="person_wrap_counter-wrap_counter_number">9</div>
+												<div class="person_wrap_counter-wrap_counter_number">9</div>
+												<div class="person_wrap_counter-wrap_counter_number">9</div>
+												<div class="person_wrap_counter-wrap_counter_number">9</div>
+												<span>компьютеров</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col l9 s12">
+									<div class="person_wrap_form-wrap">
+										<div class="person_wrap_form-wrap_title">
+											Владимир
+										</div>
+										<div class="person_wrap_form-wrap_descr">
+											<p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в формировании новых предложений. Задача организации, в особенности же консультация с широким активом требуют от нас анализа направлений прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании модели развития.</p> 
+										</div>
+										<div class="person_wrap_form-wrap_form">
+											<form action="#" method="POST">
+												<input type="text"  placeholder="ВАШЕ ИМЯ">
+												<input type="text" placeholder="ВАШЕ НОМЕР ТЕЛЕФОНА*">
+												<button>вызвать владимира</button>
+											</form>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section id="recall">
+		<div class="recal">
+			<div class="container">
+				<div class="row">
+					<h2 class="recall_title"><strong>настоящие отзывы </strong>наших клиентов</h2>
+					<div id="recal-slider">
+						<div data-add="popup-doc">
+							<a href="img/doc.jpg" >
+								<img src="img/doc.jpg" alt="doc" class="recal-slide">
+							</a>
+						</div>
+						<div data-add="popup-doc">
+							<a href="img/doc.jpg" >
+								<img src="img/doc.jpg" alt="doc" class="recal-slide">
+							</a>
+						</div>
+						<div data-add="popup-doc">
+							<a href="img/doc.jpg" >
+								<img src="img/doc.jpg" alt="doc" class="recal-slide">
+							</a>
+						</div>
+						<div data-add="popup-doc">
+							<a href="img/doc.jpg" >
+								<img src="img/doc.jpg" alt="doc" class="recal-slide">
+							</a>
+						</div>
+						<div data-add="popup-doc">
+							<a href="img/doc.jpg" >
+								<img src="img/doc.jpg" alt="doc" class="recal-slide">
+							</a>
+						</div>
+						<div data-add="popup-doc">
+							<a href="img/doc.jpg" >
+								<img src="img/doc.jpg" alt="doc" class="recal-slide">
+							</a>
+						</div>
+						<div data-add="popup-doc">
+							<a href="img/doc.jpg" >
+								<img src="img/doc.jpg" alt="doc" class="recal-slide">
+							</a>
+						</div>
+						<div data-add="popup-doc">
+							<a href="img/doc.jpg" >
+								<img src="img/doc.jpg" alt="doc" class="recal-slide">
+							</a>
+						</div>
+						<div data-add="popup-doc">
+							<a href="img/doc.jpg" >
+								<img src="img/doc.jpg" alt="doc" class="recal-slide">
+							</a>
+						</div>
+						<div data-add="popup-doc">
+							<a href="img/doc.jpg" >
+								<img src="img/doc.jpg" alt="doc" class="recal-slide">
+							</a>
+						</div>
+						<div data-add="popup-doc">
+							<a href="img/doc.jpg" >
+								<img src="img/doc.jpg" alt="doc" class="recal-slide">
+							</a>
+						</div>
+						<div data-add="popup-doc">
+							<a href="img/doc.jpg" >
+								<img src="img/doc.jpg" alt="doc" class="recal-slide">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="person_page-wrap">
+				<div class="person_page-wrap_line"></div>
+				<div class="wrap-number-page">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about" id="about">
+		<div class="container">
+			<div class="row">
+				<h2 class="about_title">Вкратце о нашем <strong>сервисном центре</strong></h2>
+				<div class="about_wrap">
+					<div class="col s12">
+						<div class="about_wrap_descr">
+							<p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в формировании новых предложений.</p>
+							<p>Задача организации, в особенности же консультация с широким активом требуют от нас анализа направлений прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании модели развития. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же консультация с широким активом требуют от нас анализа направлений прогрессивного развития. Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании модели развития. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.</p>
+						</div>
+					</div>
+					<div class="about_wrap_descr_items col m12 s12 l7 push-l5">
+						<div class="about_wrap_descr_items_item-wrap">
+							<div class="about_wrap_descr_items_item-wrap_item">
+								<a href="img/door-1.jpg">
+									<img src="img/door-1.jpg" alt="" class="about_wrap_descr_items_item-wrap_item_img col s4">
+								</a>
+								<a href="img/door-2.jpg">
+									<img src="img/door-2.jpg" alt="" class="about_wrap_descr_items_item-wrap_item_img col s4">
+								</a>
+								<a href="img/door-3.jpg">
+									<img src="img/door-3.jpg" alt="" class="about_wrap_descr_items_item-wrap_item_img col s4">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col l5 pull-l7 m12 s12">
+						<div class="about_wrap_map">
+							<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=cPkHLbe6VrzEjUBJP-OXKcvKnJyRcWPk&width=100%&height=400&lang=ru_RU&sourceType=constructor"></script>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section id="question">
+		<div class="question">
+			<div class="container">
+				<div class="row">
+					<div class="question_wrap-people">
+						<div class="question_wrap-people_people">
+							<img src="img/woman.png" alt="">
+						</div>
+					</div>
+					<div class="question_form-wrap">
+						<div class="question_form-wrap_descr">
+							<div class="question_form-wrap_descr_title">
+								<p>остались<strong> вопросы?</strong></p>
+								<span>Оставьте заявку и мы вас проконсультируем по телефону<strong> бесплтано!</strong></span>
+							</div>
+							<div class="question_form-wrap_descr_form">
+								<form action="#" method="POST">
+									<input type="text" placeholder="ВАШЕ ИМЯ">
+									<input type="text" placeholder="ВАШ НОМЕР ТЕЛЕФОНА*">
+									<button>получить консультацию</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col l4 push-l4 m12 s12">
+						<div class="footer_help">
+							<p class="footer_help_title">компьтерная помощь на дому</p>
+							<p>в городе <a href="#">Санкт-Петербург </a><span> Мучной переулок, д.3 Садовая</span></p>
+						</div>
+					</div>
+					<div class="col l4 pull-l4 m6 s6">
+						<div class="footer_logo">
+							<img src="img/logo.png" alt="#">
+						</div>
+					</div>
+					<div class="col l4 m6 s6">
+						<div class="footer_phone">
+							<div class="footer_phone-wrap">
+								<address>8 (909) 200-20-20</address>
+								<p>c 8:00 до 24:00<a href="#">Заказать завонок</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_copy">
+			<p>*Цена указана при условии последующиего ремонт. Информация размещенная на сайте не является публичной офертой</p>
+		</div>
+	</footer>
+</div>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

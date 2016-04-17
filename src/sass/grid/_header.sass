@@ -98,16 +98,16 @@
 		background-size: cover
 		background-position: center bottom
 		width: 100%
-		min-height: 500px
-		overflow: hidden
+		//min-height: 500px
+		//overflow: hidden
 		&_top_menu
 			background-color: $colorTopMenu
 			height: $heightTopMenu
-			@media only screen and (max-width : #{$largeDevisesMin})
+			@media only screen and (max-width : #{$largeDevisesMin + 1px})
 				width: 100%
 				position: absolute
 			ul
-				@media only screen and (max-width : #{$largeDevisesMin})
+				@media only screen and (max-width : #{$largeDevisesMin +1px})
 					display: none
 				li
 					width: (100 / 8) +%
@@ -162,7 +162,7 @@
 		&_dop-info
 			position: relative
 			border-bottom: 1px solid rgba($colorBase,.4)
-			@media only screen and (max-width : #{$largeDevisesMin})
+			@media only screen and (max-width : #{$largeDevisesMin + 1px})
 				z-index: 102
 				margin-top: 5px
 			@media only screen and (max-width : $extraSmallDevicesMax)
@@ -172,7 +172,7 @@
 				position: relative
 				text-align: center
 				color: $colorBase
-				@media only screen and (max-width : #{$largeDevisesMin})
+				@media only screen and (max-width : #{$largeDevisesMin + 1px})
 					margin-top: 20px
 					margin-bottom: 16px
 				&_title
@@ -191,14 +191,14 @@
 						cursor: pointer
 						position: relative
 			span
-				@media only screen and (max-width : #{$largeDevisesMin})
+				@media only screen and (max-width : #{$largeDevisesMin + 1px})
 					display: inline-block
 				text-align: center
 				display: block
 				color: $colorBase
 				margin: 0 auto
 			&_logo
-				@media only screen and (max-width : #{$largeDevisesMin})
+				@media only screen and (max-width : #{$largeDevisesMin + 1px})
 					width: 100%
 					text-align: center
 					margin-top: 3px
@@ -283,7 +283,7 @@
 				background-position: center
 				margin-top: 48px
 				margin-bottom: 57px
-				@media only screen and (max-width : #{$largeDevisesMin})
+				@media only screen and (max-width : #{$largeDevisesMin + 1})
 					background-image: url("../img/mini-type.png")
 					width: 471px
 					background-size: contain
@@ -303,7 +303,7 @@
 					text-transform: uppercase
 					top: 30%
 					transform: translateY(-50%)
-					@media only screen and (max-width : #{$largeDevisesMin})
+					@media only screen and (max-width : #{$largeDevisesMin + 1px})
 						font-size: 15px
 						top: 25%
 					@media only screen and (max-width : 460px)
@@ -316,7 +316,7 @@
 						background-image: url("../img/watch.png")
 						position: relative
 						top: 4px
-						@media only screen and (max-width : #{$largeDevisesMin})
+						@media only screen and (max-width : #{$largeDevisesMin + 1px})
 							width: 20px
 							height: 24px
 							background-size: contain
@@ -327,7 +327,7 @@
 			&_info
 				font-size: 18px
 				font-weight: 100
-				@media only screen and (max-width : #{$largeDevisesMin})
+				@media only screen and (max-width : #{$largeDevisesMin + 1px})
 					font-size: 16px
 					&>span
 						&>span
@@ -408,7 +408,7 @@
 		//width: 674px
 		background-position: center
 		top: 100px
-		@media only screen and (max-width : #{$largeDevisesMin})
+		@media only screen and (max-width : #{$largeDevisesMin +1px})
 			background-image: url("../img/mini-type.png")
 		p
 			text-transform: uppercase
@@ -439,6 +439,7 @@
 			left: 0
 			right: 0
 			top: 120%
+	
 	
 
 
